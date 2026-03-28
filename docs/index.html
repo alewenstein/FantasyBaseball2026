@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantasy Baseball Game Picker</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      margin-top: 0.35rem;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+
+    /* Controls */
+    .controls {
+      background: white;
+      border-radius: 12px;
+      padding: 1.25rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: flex-end;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+      flex: 1;
+      min-width: 160px;
+    }
+    label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #718096;
+    }
+    select, input[type="date"] {
+      padding: 0.55rem 0.75rem;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      background: white;
+      color: #1a202c;
+      width: 100%;
+      transition: border-color 0.15s;
+    }
+    select:focus, input[type="date"]:focus {
+      outline: none;
+      border-color: #4299e1;
+    }
+    select:disabled {
+      background: #f7fafc;
+      color: #a0aec0;
+    }
+
+    button#find-btn {
+      padding: 0.6rem 1.5rem;
+      background: #2b6cb0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.15s, opacity 0.15s;
+      align-self: flex-end;
+    }
+    button#find-btn:hover { background: #2c5282; }
+    button#find-btn:disabled { opacity: 0.6; cursor: default; }
+
+    /* Status line */
+    #status {
+      font-size: 0.82rem;
+      color: #718096;
+      margin-top: 0.5rem;
+      min-height: 1.2em;
+    }
+
+    /* Results */
+    #results { margin-top: 1.25rem; }
+
+    .results-header {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #718096;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+
+    .no-games {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      color: #718096;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    .game-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      border-left: 5px solid #e2e8f0;
+      transition: box-shadow 0.15s;
+    }
+    .game-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
+    .game-card.has-many  { border-left-color: #38a169; }
+    .game-card.has-some  { border-left-color: #d69e2e; }
+    .game-card.has-none  { border-left-color: #e2e8f0; opacity: 0.7; }
+
+    .game-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .matchup {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1a202c;
+    }
+    .game-meta {
+      font-size: 0.78rem;
+      color: #a0aec0;
+      margin-top: 0.15rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge-green  { background: #c6f6d5; color: #276749; }
+    .badge-yellow { background: #fefcbf; color: #744210; }
+    .badge-gray   { background: #edf2f7; color: #718096; }
+
+    .player-lists {
+      margin-top: 0.65rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .team-players {
+      flex: 1;
+      min-width: 140px;
+    }
+    .team-label {
+      font-size: 0.73rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #a0aec0;
+      margin-bottom: 0.25rem;
+    }
+    .player-chip {
+      display: inline-block;
+      background: #ebf8ff;
+      color: #2b6cb0;
+      border-radius: 6px;
+      padding: 0.18rem 0.45rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      margin: 0.15rem 0.15rem 0 0;
+    }
+    .player-chip .pos {
+      color: #90cdf4;
+      font-size: 0.7rem;
+      margin-left: 0.2rem;
+    }
+    .no-players {
+      font-size: 0.78rem;
+      color: #cbd5e0;
+      font-style: italic;
+    }
+
+    .error-box {
+      background: #fff5f5;
+      border: 1.5px solid #fc8181;
+      color: #c53030;
+      border-radius: 10px;
+      padding: 0.85rem 1rem;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.4rem; }
+      .controls { flex-direction: column; }
+      button#find-btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>⚾ Fantasy Game Picker</h1>
+  <p>Find the best games to watch for your fantasy roster</p>
+</header>
+
+<div class="container">
+  <div class="controls">
+    <div class="control-group">
+      <label for="team-select">Your Fantasy Team</label>
+      <select id="team-select" disabled>
+        <option value="">Loading teams…</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label for="date-picker">Date</label>
+      <input type="date" id="date-picker" />
+    </div>
+    <button id="find-btn" onclick="findGames()" disabled>Find Games</button>
+  </div>
+  <div id="status"></div>
+  <div id="results"></div>
+</div>
+
+<script>
+  let rosters = null;
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    // Default date = today in local time
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm   = String(today.getMonth() + 1).padStart(2, "0");
+    const dd   = String(today.getDate()).padStart(2, "0");
+    document.getElementById("date-picker").value = `${yyyy}-${mm}-${dd}`;
+
+    setStatus("Loading team rosters…");
+    try {
+      const resp = await fetch("rosters.json");
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      rosters = await resp.json();
+      populateTeams(rosters.teams);
+      const updated = new Date(rosters.updated).toLocaleString();
+      setStatus(`Rosters last updated: ${updated}`);
+    } catch (e) {
+      showError("Could not load roster data. The roster file may not have been generated yet — run the GitHub Action or <code>python fetch_rosters.py</code> first.");
+      setStatus("");
+    }
+  });
+
+  function populateTeams(teams) {
+    const sel = document.getElementById("team-select");
+    sel.innerHTML = '<option value="">— Pick your team —</option>';
+    [...teams]
+      .sort((a, b) => a.team_name.localeCompare(b.team_name))
+      .forEach(t => {
+        const opt = document.createElement("option");
+        opt.value = t.team_id;
+        opt.textContent = `${t.team_name}  (${t.manager})`;
+        sel.appendChild(opt);
+      });
+    sel.disabled = false;
+    document.getElementById("find-btn").disabled = false;
+  }
+
+  // ── Main action ───────────────────────────────────────────────────────────
+
+  async function findGames() {
+    const teamId = document.getElementById("team-select").value;
+    const date   = document.getElementById("date-picker").value;
+
+    if (!teamId) { setStatus("Please select a team."); return; }
+    if (!date)   { setStatus("Please pick a date."); return; }
+
+    const fantasyTeam = rosters.teams.find(t => t.team_id === teamId);
+
+    // Build map: MLB team abbr → [players]
+    const byTeam = {};
+    for (const p of fantasyTeam.players) {
+      const abbr = (p.mlb_team || "").toUpperCase().trim();
+      if (!abbr || abbr === "FA" || abbr === "") continue;
+      (byTeam[abbr] = byTeam[abbr] || []).push(p);
+    }
+
+    setStatus("Fetching MLB schedule…");
+    document.getElementById("find-btn").disabled = true;
+    document.getElementById("results").innerHTML = "";
+
+    try {
+      const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${date}`;
+      const resp = await fetch(url);
+      if (!resp.ok) throw new Error(`MLB API returned ${resp.status}`);
+      const data = await resp.json();
+
+      const games = data.dates?.[0]?.games ?? [];
+      renderResults(games, byTeam, fantasyTeam.team_name, date);
+      setStatus(`Rosters last updated: ${new Date(rosters.updated).toLocaleString()}`);
+    } catch (e) {
+      showError("Failed to fetch the MLB schedule. Check your connection and try again.");
+      setStatus("");
+    } finally {
+      document.getElementById("find-btn").disabled = false;
+    }
+  }
+
+  // ── Rendering ─────────────────────────────────────────────────────────────
+
+  function renderResults(games, byTeam, teamName, date) {
+    const container = document.getElementById("results");
+
+    if (games.length === 0) {
+      container.innerHTML = `<div class="no-games">No MLB games scheduled on ${formatDate(date)}.</div>`;
+      return;
+    }
+
+    // Annotate each game with matching players
+    const annotated = games.map(game => {
+      const awayAbbr = normalizeAbbr(game.teams?.away?.team?.abbreviation);
+      const homeAbbr = normalizeAbbr(game.teams?.home?.team?.abbreviation);
+      const awayName = game.teams?.away?.team?.name ?? awayAbbr;
+      const homeName = game.teams?.home?.team?.name ?? homeAbbr;
+      const awayPlayers = byTeam[awayAbbr] ?? [];
+      const homePlayers = byTeam[homeAbbr] ?? [];
+      const count = awayPlayers.length + homePlayers.length;
+      return { game, awayAbbr, homeAbbr, awayName, homeName, awayPlayers, homePlayers, count };
+    });
+
+    annotated.sort((a, b) => b.count - a.count);
+
+    const withPlayers = annotated.filter(g => g.count > 0);
+    const withoutPlayers = annotated.filter(g => g.count === 0);
+
+    const html = [];
+    html.push(`<div class="results-header">${formatDate(date)} — ${teamName}</div>`);
+
+    if (withPlayers.length === 0) {
+      html.push(`<div class="no-games">None of your players are active on ${formatDate(date)}. Check back on a game day!</div>`);
+    } else {
+      for (const g of withPlayers) html.push(gameCardHTML(g));
+    }
+
+    if (withoutPlayers.length > 0) {
+      html.push(`<div class="results-header" style="margin-top:1.25rem">Other games (no players)</div>`);
+      for (const g of withoutPlayers) html.push(gameCardHTML(g));
+    }
+
+    container.innerHTML = html.join("");
+  }
+
+  function gameCardHTML({ game, awayAbbr, homeAbbr, awayName, homeName, awayPlayers, homePlayers, count }) {
+    const cardClass = count >= 3 ? "has-many" : count >= 1 ? "has-some" : "has-none";
+    const badgeClass = count >= 3 ? "badge-green" : count >= 1 ? "badge-yellow" : "badge-gray";
+    const badgeLabel = count === 0
+      ? "No players"
+      : count === 1
+        ? "1 player"
+        : `${count} players`;
+
+    const gameTime = game.gameDate
+      ? new Date(game.gameDate).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
+      : "";
+    const venue = game.venue?.name ?? "";
+
+    return `
+<div class="game-card ${cardClass}">
+  <div class="game-header">
+    <div>
+      <div class="matchup">${awayName} @ ${homeName}</div>
+      <div class="game-meta">${[gameTime, venue].filter(Boolean).join(" · ")}</div>
+    </div>
+    <span class="badge ${badgeClass}">${badgeLabel}</span>
+  </div>
+  ${count > 0 ? `
+  <div class="player-lists">
+    ${playerListHTML(awayName, awayAbbr, awayPlayers, "Away")}
+    ${playerListHTML(homeName, homeAbbr, homePlayers, "Home")}
+  </div>` : ""}
+</div>`;
+  }
+
+  function playerListHTML(teamName, abbr, players, side) {
+    if (players.length === 0) return "";
+    const chips = players
+      .map(p => `<span class="player-chip">${p.name}<span class="pos">${p.position}</span></span>`)
+      .join("");
+    return `
+<div class="team-players">
+  <div class="team-label">${side}: ${abbr}</div>
+  ${chips}
+</div>`;
+  }
+
+  // ── Helpers ───────────────────────────────────────────────────────────────
+
+  function normalizeAbbr(raw) {
+    if (!raw) return "";
+    const s = raw.toUpperCase().trim();
+    // Handful of known Yahoo ↔ MLB API differences
+    const map = { "AZ": "ARI", "WAS": "WSH" };
+    return map[s] ?? s;
+  }
+
+  function formatDate(dateStr) {
+    const [y, m, d] = dateStr.split("-").map(Number);
+    return new Date(y, m - 1, d).toLocaleDateString(undefined, {
+      weekday: "long", month: "long", day: "numeric", year: "numeric",
+    });
+  }
+
+  function setStatus(msg) {
+    document.getElementById("status").textContent = msg;
+  }
+
+  function showError(html) {
+    document.getElementById("results").innerHTML = `<div class="error-box">${html}</div>`;
+  }
+</script>
+</body>
+</html>
