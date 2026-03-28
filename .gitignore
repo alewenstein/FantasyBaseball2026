@@ -1,0 +1,7 @@
+.env
+*.json.bak
+__pycache__/
+*.pyc
+.venv/
+venv/
+yahoo_tokens.json
