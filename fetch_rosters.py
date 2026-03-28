@@ -17,6 +17,13 @@ load_dotenv(override=True)
 ENV_DIR = Path(__file__).parent
 
 
+def _s(value) -> str:
+    """Convert yfpy values to plain strings — handles bytes, str, and other types."""
+    if isinstance(value, bytes):
+        return value.decode("utf-8")
+    return str(value) if value is not None else ""
+
+
 def get_query() -> YahooFantasySportsQuery:
     """Return an authenticated query. Uses refresh token in CI; no browser needed."""
     game_id_str = os.getenv("YAHOO_SEASON")
@@ -42,7 +49,7 @@ def fetch_rosters() -> dict:
     teams = []
     for team in team_list:
         team_id = int(team.team_id)
-        team_name = str(team.name)
+        team_name = _s(team.name)
         manager = _get_manager(team)
 
         print(f"  Fetching roster for {team_name} (id={team_id})...")
@@ -60,10 +67,51 @@ def fetch_rosters() -> dict:
             "players": players,
         })
 
+    matchup_data = _fetch_matchups(query)
+
     return {
         "updated": datetime.now(timezone.utc).isoformat(),
+        "current_week": matchup_data["current_week"],
+        "matchups": matchup_data["matchups"],
         "teams": teams,
     }
+
+
+def _fetch_matchups(query) -> dict:
+    """Fetch the current week's fantasy matchups."""
+    week = None
+
+    # Auto-detect current week from league metadata
+    for method_name in ("get_league_metadata", "get_league_info"):
+        try:
+            meta = getattr(query, method_name)()
+            week = int(meta.current_week)
+            break
+        except Exception:
+            pass
+
+    if week is None:
+        print("  Could not auto-detect current week — skipping matchups.", file=sys.stderr)
+        return {"current_week": None, "matchups": []}
+
+    print(f"  Fetching week {week} matchups...")
+    try:
+        matchups_raw = query.get_league_matchups_by_week(chosen_week=week)
+    except Exception as e:
+        print(f"  Warning: failed to fetch matchups: {e}", file=sys.stderr)
+        return {"current_week": week, "matchups": []}
+
+    matchups = []
+    for matchup in matchups_raw:
+        teams = matchup.teams
+        team_list = list(teams.values()) if isinstance(teams, dict) else teams
+        if len(team_list) == 2:
+            matchups.append({
+                "team1_id": str(int(team_list[0].team_id)),
+                "team2_id": str(int(team_list[1].team_id)),
+            })
+
+    return {"current_week": week, "matchups": matchups}
 
 
 def _parse_roster(roster_raw) -> list:
@@ -76,12 +124,12 @@ def _parse_roster(roster_raw) -> list:
             p = item.player if hasattr(item, "player") else item
 
             name = (
-                str(p.name.full)
+                _s(p.name.full)
                 if hasattr(p, "name") and hasattr(p.name, "full")
-                else str(getattr(p, "name", "Unknown"))
+                else _s(getattr(p, "name", "Unknown"))
             )
-            mlb_team = str(getattr(p, "editorial_team_abbr", "")).upper().strip()
-            position = str(getattr(p, "display_position", "")).strip()
+            mlb_team = _s(getattr(p, "editorial_team_abbr", "")).upper().strip()
+            position = _s(getattr(p, "display_position", "")).strip()
 
             if name and name != "Unknown":
                 players.append({
@@ -102,7 +150,7 @@ def _get_manager(team) -> str:
             managers = list(managers.values())
         if managers:
             m = managers[0]
-            return str(m.manager.nickname) if hasattr(m, "manager") else str(m.nickname)
+            return _s(m.manager.nickname) if hasattr(m, "manager") else _s(m.nickname)
     except Exception:
         pass
     return "Unknown"
