@@ -37,6 +37,31 @@
       padding: 1.5rem 1rem;
     }
 
+    /* Mode toggle */
+    .mode-toggle {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .mode-btn {
+      flex: 1;
+      padding: 0.55rem 0.75rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      background: white;
+      color: #718096;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .mode-btn:hover { border-color: #90cdf4; color: #2b6cb0; }
+    .mode-btn.active {
+      border-color: #2b6cb0;
+      background: #2b6cb0;
+      color: white;
+    }
+
     /* Controls */
     .controls {
       background: white;
@@ -208,11 +233,49 @@
       color: #c05621;
     }
     .player-chip.opp .pos { color: #f6ad55; font-size: 0.7rem; margin-left: 0.2rem; }
-    .no-players {
-      font-size: 0.78rem;
-      color: #cbd5e0;
-      font-style: italic;
+
+    /* Game lookup — fantasy team cards */
+    .fantasy-team-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      border-left: 5px solid #e2e8f0;
+      transition: box-shadow 0.15s;
     }
+    .fantasy-team-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
+    .fantasy-team-card.has-many { border-left-color: #38a169; }
+    .fantasy-team-card.has-some { border-left-color: #d69e2e; }
+    .fantasy-team-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .fantasy-team-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a202c;
+    }
+    .fantasy-team-manager {
+      font-size: 0.78rem;
+      color: #a0aec0;
+      margin-top: 0.1rem;
+    }
+
+    /* Game lookup — selected game banner */
+    .game-banner {
+      background: white;
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      font-size: 0.9rem;
+      color: #4a5568;
+    }
+    .game-banner strong { color: #1a202c; font-size: 1rem; }
+    .game-banner .game-time { font-size: 0.78rem; color: #a0aec0; margin-top: 0.15rem; }
 
     .matchup-banner {
       background: white;
@@ -249,6 +312,7 @@
       header h1 { font-size: 1.4rem; }
       .controls { flex-direction: column; }
       button#find-btn { width: 100%; }
+      .mode-toggle { flex-direction: column; }
     }
   </style>
 </head>
@@ -260,30 +324,51 @@
 </header>
 
 <div class="container">
+
+  <!-- Mode toggle -->
+  <div class="mode-toggle">
+    <button id="btn-mode-team" class="mode-btn active" onclick="setMode('team')">🔍 Find games for my team</button>
+    <button id="btn-mode-game" class="mode-btn" onclick="setMode('game')">👥 Who's in this game?</button>
+  </div>
+
   <div class="controls">
-    <div class="control-group">
+    <!-- Team mode: fantasy team selector -->
+    <div class="control-group" id="team-group">
       <label for="team-select">Your Fantasy Team</label>
       <select id="team-select" disabled>
         <option value="">Loading teams…</option>
       </select>
     </div>
+
+    <!-- Shared: date -->
     <div class="control-group">
       <label for="date-picker">Date</label>
-      <input type="date" id="date-picker" />
+      <input type="date" id="date-picker" onchange="onDateChange()" />
     </div>
-    <button id="find-btn" onclick="findGames()" disabled>Find Games</button>
+
+    <!-- Game mode: game selector -->
+    <div class="control-group" id="game-group" style="display:none">
+      <label for="game-select">Game</label>
+      <select id="game-select" disabled>
+        <option value="">— Pick a date first —</option>
+      </select>
+    </div>
+
+    <button id="find-btn" onclick="handleSubmit()" disabled>Find Games</button>
   </div>
+
   <div id="status"></div>
   <div id="results"></div>
 </div>
 
 <script>
   let rosters = null;
+  let currentMode = "team";
+  let cachedGames = {}; // date → games array
 
   // ── Init ──────────────────────────────────────────────────────────────────
 
   document.addEventListener("DOMContentLoaded", async () => {
-    // Default date = today in local time
     const today = new Date();
     const yyyy = today.getFullYear();
     const mm   = String(today.getMonth() + 1).padStart(2, "0");
@@ -319,7 +404,87 @@
     document.getElementById("find-btn").disabled = false;
   }
 
-  // ── Main action ───────────────────────────────────────────────────────────
+  // ── Mode switching ─────────────────────────────────────────────────────────
+
+  function setMode(mode) {
+    currentMode = mode;
+
+    document.getElementById("btn-mode-team").classList.toggle("active", mode === "team");
+    document.getElementById("btn-mode-game").classList.toggle("active", mode === "game");
+
+    document.getElementById("team-group").style.display = mode === "team" ? "" : "none";
+    document.getElementById("game-group").style.display = mode === "game" ? "" : "none";
+
+    document.getElementById("find-btn").textContent = mode === "team" ? "Find Games" : "Look Up";
+    document.getElementById("results").innerHTML = "";
+
+    if (mode === "game") {
+      const date = document.getElementById("date-picker").value;
+      if (date) fetchGamesForDate(date);
+    }
+  }
+
+  async function onDateChange() {
+    if (currentMode === "game") {
+      const date = document.getElementById("date-picker").value;
+      if (date) await fetchGamesForDate(date);
+    }
+  }
+
+  async function fetchGamesForDate(date) {
+    if (cachedGames[date]) {
+      populateGameSelect(cachedGames[date]);
+      return;
+    }
+    const gameSel = document.getElementById("game-select");
+    gameSel.disabled = true;
+    gameSel.innerHTML = '<option value="">Loading games…</option>';
+    setStatus("Fetching MLB schedule…");
+    try {
+      const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${date}&hydrate=team`;
+      const resp = await fetch(url);
+      if (!resp.ok) throw new Error(`MLB API ${resp.status}`);
+      const data = await resp.json();
+      const games = data.dates?.[0]?.games ?? [];
+      cachedGames[date] = games;
+      populateGameSelect(games);
+      setStatus(`Rosters last updated: ${new Date(rosters.updated).toLocaleString()}`);
+    } catch (e) {
+      gameSel.innerHTML = '<option value="">Failed to load games</option>';
+      setStatus("Could not fetch MLB schedule.");
+    }
+  }
+
+  function populateGameSelect(games) {
+    const gameSel = document.getElementById("game-select");
+    if (games.length === 0) {
+      gameSel.innerHTML = '<option value="">No games on this date</option>';
+      gameSel.disabled = true;
+      return;
+    }
+    gameSel.innerHTML = '<option value="">— Pick a game —</option>';
+    games.forEach((g, i) => {
+      const away = g.teams?.away?.team?.name ?? "Away";
+      const home = g.teams?.home?.team?.name ?? "Home";
+      const time = g.gameDate
+        ? new Date(g.gameDate).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
+        : "";
+      const opt = document.createElement("option");
+      opt.value = i;
+      opt.textContent = `${away} @ ${home}${time ? "  ·  " + time : ""}`;
+      gameSel.appendChild(opt);
+    });
+    gameSel.disabled = false;
+  }
+
+  // ── Submit handler ─────────────────────────────────────────────────────────
+
+  function handleSubmit() {
+    if (currentMode === "team") findGames();
+    else lookupGame();
+  }
+
+  // ── Team mode ──────────────────────────────────────────────────────────────
 
   async function findGames() {
     const teamId = document.getElementById("team-select").value;
@@ -329,26 +494,17 @@
     if (!date)   { setStatus("Please pick a date."); return; }
 
     const fantasyTeam = rosters.teams.find(t => t.team_id === teamId);
-
-    // Find this week's opponent (if matchup data exists)
-    const opponent = findOpponent(teamId);
-
-    // Build maps: MLB team abbr → [players]  (one for each fantasy team)
-    const myByTeam  = buildTeamMap(fantasyTeam.players);
-    const oppByTeam = opponent ? buildTeamMap(opponent.players) : {};
+    const opponent    = findOpponent(teamId);
+    const myByTeam    = buildTeamMap(fantasyTeam.players);
+    const oppByTeam   = opponent ? buildTeamMap(opponent.players) : {};
 
     setStatus("Fetching MLB schedule…");
     document.getElementById("find-btn").disabled = true;
     document.getElementById("results").innerHTML = "";
 
     try {
-      const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${date}&hydrate=team`;
-      const resp = await fetch(url);
-      if (!resp.ok) throw new Error(`MLB API returned ${resp.status}`);
-      const data = await resp.json();
-
-      const games = data.dates?.[0]?.games ?? [];
-      renderResults(games, myByTeam, oppByTeam, fantasyTeam, opponent, date);
+      const games = await getGames(date);
+      renderTeamModeResults(games, myByTeam, oppByTeam, fantasyTeam, opponent, date);
       setStatus(`Rosters last updated: ${new Date(rosters.updated).toLocaleString()}`);
     } catch (e) {
       showError("Failed to fetch the MLB schedule. Check your connection and try again.");
@@ -358,10 +514,121 @@
     }
   }
 
+  // ── Game lookup mode ───────────────────────────────────────────────────────
+
+  async function lookupGame() {
+    const date    = document.getElementById("date-picker").value;
+    const gameIdx = document.getElementById("game-select").value;
+
+    if (!date)              { setStatus("Please pick a date."); return; }
+    if (gameIdx === "")     { setStatus("Please select a game."); return; }
+    if (!rosters)           { setStatus("Roster data not loaded yet."); return; }
+
+    const games = cachedGames[date] ?? [];
+    const game  = games[parseInt(gameIdx, 10)];
+    if (!game) { setStatus("Game not found."); return; }
+
+    document.getElementById("find-btn").disabled = true;
+    document.getElementById("results").innerHTML = "";
+
+    const awayAbbr = normalizeAbbr(game.teams?.away?.team?.abbreviation);
+    const homeAbbr = normalizeAbbr(game.teams?.home?.team?.abbreviation);
+    const awayName = game.teams?.away?.team?.name ?? awayAbbr;
+    const homeName = game.teams?.home?.team?.name ?? homeAbbr;
+
+    // For every fantasy team, find players in this game
+    const teamResults = rosters.teams.map(ft => {
+      const awayPlayers = ft.players.filter(p => normalizeAbbr(p.mlb_team) === awayAbbr && awayAbbr);
+      const homePlayers = ft.players.filter(p => normalizeAbbr(p.mlb_team) === homeAbbr && homeAbbr);
+      return { fantasyTeam: ft, awayPlayers, homePlayers, count: awayPlayers.length + homePlayers.length };
+    }).filter(r => r.count > 0)
+      .sort((a, b) => b.count - a.count);
+
+    renderGameLookupResults(game, awayAbbr, homeAbbr, awayName, homeName, teamResults, date);
+    setStatus(`Rosters last updated: ${new Date(rosters.updated).toLocaleString()}`);
+    document.getElementById("find-btn").disabled = false;
+  }
+
+  function renderGameLookupResults(game, awayAbbr, homeAbbr, awayName, homeName, teamResults, date) {
+    const container = document.getElementById("results");
+    const html = [];
+
+    const gameTime = game.gameDate
+      ? new Date(game.gameDate).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })
+      : "";
+    const venue = game.venue?.name ?? "";
+
+    html.push(`
+<div class="game-banner">
+  <strong>${awayName} @ ${homeName}</strong>
+  <div class="game-time">${[formatDate(date), gameTime, venue].filter(Boolean).join("  ·  ")}</div>
+</div>`);
+
+    html.push(`<div class="results-header">${teamResults.length} fantasy team${teamResults.length !== 1 ? "s" : ""} with players in this game</div>`);
+
+    if (teamResults.length === 0) {
+      html.push(`<div class="no-games">No fantasy players from any team are in this game.</div>`);
+    } else {
+      for (const r of teamResults) {
+        const cardClass  = r.count >= 3 ? "has-many" : "has-some";
+        const badgeClass = r.count >= 3 ? "badge-green" : "badge-yellow";
+        const badgeLabel = r.count === 1 ? "1 player" : `${r.count} players`;
+
+        const awayChips = r.awayPlayers.map(p =>
+          `<span class="player-chip mine">${p.name}<span class="pos">${p.position}</span></span>`
+        ).join("");
+        const homeChips = r.homePlayers.map(p =>
+          `<span class="player-chip mine">${p.name}<span class="pos">${p.position}</span></span>`
+        ).join("");
+
+        const awaySection = r.awayPlayers.length > 0 ? `
+<div class="team-players">
+  <div class="team-label">Away: ${awayAbbr}</div>
+  ${awayChips}
+</div>` : "";
+
+        const homeSection = r.homePlayers.length > 0 ? `
+<div class="team-players">
+  <div class="team-label">Home: ${homeAbbr}</div>
+  ${homeChips}
+</div>` : "";
+
+        html.push(`
+<div class="fantasy-team-card ${cardClass}">
+  <div class="fantasy-team-header">
+    <div>
+      <div class="fantasy-team-name">${r.fantasyTeam.team_name}</div>
+      <div class="fantasy-team-manager">${r.fantasyTeam.manager}</div>
+    </div>
+    <span class="badge ${badgeClass}">${badgeLabel}</span>
+  </div>
+  <div class="player-lists">
+    ${awaySection}
+    ${homeSection}
+  </div>
+</div>`);
+      }
+    }
+
+    container.innerHTML = html.join("");
+  }
+
+  // ── Shared helpers ─────────────────────────────────────────────────────────
+
+  async function getGames(date) {
+    if (cachedGames[date]) return cachedGames[date];
+    const url = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${date}&hydrate=team`;
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`MLB API returned ${resp.status}`);
+    const data = await resp.json();
+    cachedGames[date] = data.dates?.[0]?.games ?? [];
+    return cachedGames[date];
+  }
+
   function buildTeamMap(players) {
     const map = {};
     for (const p of players) {
-      const abbr = (p.mlb_team || "").toUpperCase().trim();
+      const abbr = normalizeAbbr(p.mlb_team);
       if (!abbr || abbr === "FA") continue;
       (map[abbr] = map[abbr] || []).push(p);
     }
@@ -377,9 +644,9 @@
     return null;
   }
 
-  // ── Rendering ─────────────────────────────────────────────────────────────
+  // ── Team mode rendering ────────────────────────────────────────────────────
 
-  function renderResults(games, myByTeam, oppByTeam, fantasyTeam, opponent, date) {
+  function renderTeamModeResults(games, myByTeam, oppByTeam, fantasyTeam, opponent, date) {
     const container = document.getElementById("results");
 
     if (games.length === 0) {
@@ -387,7 +654,6 @@
       return;
     }
 
-    // Annotate each game with matching players from both teams
     const annotated = games.map(game => {
       const awayAbbr = normalizeAbbr(game.teams?.away?.team?.abbreviation);
       const homeAbbr = normalizeAbbr(game.teams?.home?.team?.abbreviation);
@@ -410,7 +676,6 @@
 
     const html = [];
 
-    // Matchup banner
     const weekLabel = rosters.current_week ? ` · Week ${rosters.current_week}` : "";
     if (opponent) {
       html.push(`
@@ -491,12 +756,11 @@
 </div>`;
   }
 
-  // ── Helpers ───────────────────────────────────────────────────────────────
+  // ── Helpers ────────────────────────────────────────────────────────────────
 
   function normalizeAbbr(raw) {
     if (!raw) return "";
     const s = raw.toUpperCase().trim();
-    // Handful of known Yahoo ↔ MLB API differences
     const map = { "AZ": "ARI", "WAS": "WSH" };
     return map[s] ?? s;
   }
