@@ -25,17 +25,19 @@ def _s(value) -> str:
 
 
 def get_query() -> YahooFantasySportsQuery:
-    """Return an authenticated query. Uses refresh token in CI; no browser needed."""
+    """Return an authenticated query. Uses YAHOO_ACCESS_TOKEN_JSON in CI."""
     game_id_str = os.getenv("YAHOO_SEASON")
+    token_json = os.getenv("YAHOO_ACCESS_TOKEN_JSON")  # full token blob (CI) or None (local)
     return YahooFantasySportsQuery(
         league_id=os.getenv("YAHOO_LEAGUE_ID"),
         game_code=os.getenv("YAHOO_GAME_CODE", "mlb"),
         game_id=int(game_id_str) if game_id_str else None,
-        yahoo_consumer_key=os.getenv("YAHOO_CLIENT_ID"),
-        yahoo_consumer_secret=os.getenv("YAHOO_CLIENT_SECRET"),
+        yahoo_consumer_key=None if token_json else os.getenv("YAHOO_CLIENT_ID"),
+        yahoo_consumer_secret=None if token_json else os.getenv("YAHOO_CLIENT_SECRET"),
+        yahoo_access_token_json=token_json,
         env_file_location=ENV_DIR,
         save_token_data_to_env_file=True,
-        browser_callback=False,  # headless — relies on refresh token in .env
+        browser_callback=False,
     )
 
 
