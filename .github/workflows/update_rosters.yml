@@ -23,17 +23,17 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Write .env from secrets
-        # yfpy reads OAuth tokens from the .env file in the project directory.
-        # YAHOO_REFRESH_TOKEN is the long-lived token — get it by running
-        # `python auth.py` locally and copying the value from your .env file.
         run: |
           echo "YAHOO_CLIENT_ID=${{ secrets.YAHOO_CLIENT_ID }}"         >> .env
           echo "YAHOO_CLIENT_SECRET=${{ secrets.YAHOO_CLIENT_SECRET }}" >> .env
           echo "YAHOO_LEAGUE_ID=${{ secrets.YAHOO_LEAGUE_ID }}"         >> .env
-          echo "YAHOO_REFRESH_TOKEN=${{ secrets.YAHOO_REFRESH_TOKEN }}" >> .env
           echo "YAHOO_SEASON=${{ secrets.YAHOO_SEASON }}"               >> .env
 
       - name: Fetch rosters
+        env:
+          # yfpy v17 needs the full token JSON in this env var.
+          # Generate the value by running: python -c "..."  (see README)
+          YAHOO_ACCESS_TOKEN_JSON: ${{ secrets.YAHOO_ACCESS_TOKEN_JSON }}
         run: python fetch_rosters.py
 
       - name: Commit and push if rosters changed
