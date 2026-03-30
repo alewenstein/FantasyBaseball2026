@@ -494,7 +494,7 @@
     if (!date)   { setStatus("Please pick a date."); return; }
 
     const fantasyTeam = rosters.teams.find(t => t.team_id === teamId);
-    const opponent    = findOpponent(teamId);
+    const opponent    = findOpponent(teamId, date);
     const myByTeam    = buildTeamMap(fantasyTeam.players);
     const oppByTeam   = opponent ? buildTeamMap(opponent.players) : {};
 
@@ -635,7 +635,21 @@
     return map;
   }
 
-  function findOpponent(teamId) {
+  function findOpponent(teamId, date) {
+    // Use all_weeks (with date ranges) if available
+    if (rosters.all_weeks?.length) {
+      const week = date
+        ? rosters.all_weeks.find(w => w.start && w.end && date >= w.start && date <= w.end)
+        : rosters.all_weeks.find(w => w.week === rosters.current_week);
+      if (week) {
+        for (const m of week.matchups) {
+          if (m.team1_id === teamId) return rosters.teams.find(t => t.team_id === m.team2_id) ?? null;
+          if (m.team2_id === teamId) return rosters.teams.find(t => t.team_id === m.team1_id) ?? null;
+        }
+      }
+      return null;
+    }
+    // Legacy fallback: single-week matchups
     if (!rosters.matchups?.length) return null;
     for (const m of rosters.matchups) {
       if (m.team1_id === teamId) return rosters.teams.find(t => t.team_id === m.team2_id) ?? null;
