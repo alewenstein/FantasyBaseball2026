@@ -1,5 +1,5 @@
 {
-  "updated": "2026-03-29T13:46:43.774810+00:00",
+  "updated": "2026-03-30T03:34:03.445593+00:00",
   "current_week": 1,
   "matchups": [
     {
@@ -25,6 +25,729 @@
     {
       "team1_id": "6",
       "team2_id": "11"
+    }
+  ],
+  "all_weeks": [
+    {
+      "week": 1,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-03-25",
+      "end": "2026-03-29"
+    },
+    {
+      "week": 2,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-03-30",
+      "end": "2026-04-05"
+    },
+    {
+      "week": 3,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "3"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "9",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-04-06",
+      "end": "2026-04-12"
+    },
+    {
+      "week": 4,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "5"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "4"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "8",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "11",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-04-13",
+      "end": "2026-04-19"
+    },
+    {
+      "week": 5,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "3"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "5"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "9",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-04-20",
+      "end": "2026-04-26"
+    },
+    {
+      "week": 6,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "5"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-04-27",
+      "end": "2026-05-03"
+    },
+    {
+      "week": 7,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "7"
+        }
+      ],
+      "start": "2026-05-04",
+      "end": "2026-05-10"
+    },
+    {
+      "week": 8,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "8",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-05-11",
+      "end": "2026-05-17"
+    },
+    {
+      "week": 9,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "4"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "8",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "10",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-05-18",
+      "end": "2026-05-24"
+    },
+    {
+      "week": 10,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "2"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "5"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "8",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "9",
+          "team2_id": "10"
+        }
+      ],
+      "start": "2026-05-25",
+      "end": "2026-05-31"
+    },
+    {
+      "week": 11,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "4"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "10",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-06-01",
+      "end": "2026-06-07"
+    },
+    {
+      "week": 12,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-06-08",
+      "end": "2026-06-14"
+    },
+    {
+      "week": 13,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-06-15",
+      "end": "2026-06-21"
+    },
+    {
+      "week": 14,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "3"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "9",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-06-22",
+      "end": "2026-06-28"
+    },
+    {
+      "week": 15,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "5"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "4"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "8",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "11",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-06-29",
+      "end": "2026-07-05"
+    },
+    {
+      "week": 16,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "3"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "5"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "9",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-07-06",
+      "end": "2026-07-12"
+    },
+    {
+      "week": 17,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "5"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "7",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-07-13",
+      "end": "2026-07-26"
+    },
+    {
+      "week": 18,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "7"
+        }
+      ],
+      "start": "2026-07-27",
+      "end": "2026-08-02"
+    },
+    {
+      "week": 19,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "8",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-08-03",
+      "end": "2026-08-09"
+    },
+    {
+      "week": 20,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "4"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "6"
+        },
+        {
+          "team1_id": "8",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "10",
+          "team2_id": "12"
+        }
+      ],
+      "start": "2026-08-10",
+      "end": "2026-08-16"
+    },
+    {
+      "week": 21,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "2"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "5"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "8",
+          "team2_id": "11"
+        },
+        {
+          "team1_id": "9",
+          "team2_id": "10"
+        }
+      ],
+      "start": "2026-08-17",
+      "end": "2026-08-23"
+    },
+    {
+      "week": 22,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "4"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "10",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-08-24",
+      "end": "2026-08-30"
+    },
+    {
+      "week": 23,
+      "matchups": [
+        {
+          "team1_id": "1",
+          "team2_id": "7"
+        },
+        {
+          "team1_id": "2",
+          "team2_id": "10"
+        },
+        {
+          "team1_id": "3",
+          "team2_id": "9"
+        },
+        {
+          "team1_id": "4",
+          "team2_id": "8"
+        },
+        {
+          "team1_id": "5",
+          "team2_id": "12"
+        },
+        {
+          "team1_id": "6",
+          "team2_id": "11"
+        }
+      ],
+      "start": "2026-08-31",
+      "end": "2026-09-06"
+    },
+    {
+      "week": 24,
+      "matchups": []
+    },
+    {
+      "week": 25,
+      "matchups": []
     }
   ],
   "teams": [
@@ -186,8 +909,8 @@
           "position": "2B,3B,SS"
         },
         {
-          "name": "Willy Adames",
-          "mlb_team": "SF",
+          "name": "Jeremy Pe\u00f1a",
+          "mlb_team": "HOU",
           "position": "SS"
         },
         {
@@ -216,13 +939,8 @@
           "position": "OF"
         },
         {
-          "name": "Luis Garc\u00eda Jr.",
-          "mlb_team": "WSH",
-          "position": "2B"
-        },
-        {
-          "name": "Jeremy Pe\u00f1a",
-          "mlb_team": "HOU",
+          "name": "Willy Adames",
+          "mlb_team": "SF",
           "position": "SS"
         },
         {
@@ -246,8 +964,8 @@
           "position": "SP"
         },
         {
-          "name": "George Kirby",
-          "mlb_team": "SEA",
+          "name": "Nolan McLean",
+          "mlb_team": "NYM",
           "position": "SP"
         },
         {
@@ -261,6 +979,11 @@
           "position": "RP"
         },
         {
+          "name": "George Kirby",
+          "mlb_team": "SEA",
+          "position": "SP"
+        },
+        {
           "name": "Freddy Peralta",
           "mlb_team": "NYM",
           "position": "SP"
@@ -271,14 +994,14 @@
           "position": "SP"
         },
         {
-          "name": "Nolan McLean",
-          "mlb_team": "NYM",
-          "position": "SP"
-        },
-        {
           "name": "Eury P\u00e9rez",
           "mlb_team": "MIA",
           "position": "SP"
+        },
+        {
+          "name": "Tony Santillan",
+          "mlb_team": "CIN",
+          "position": "RP"
         },
         {
           "name": "Kyle Stowers",
@@ -308,8 +1031,8 @@
           "position": "2B"
         },
         {
-          "name": "Matt Shaw",
-          "mlb_team": "CHC",
+          "name": "Eugenio Su\u00e1rez",
+          "mlb_team": "CIN",
           "position": "3B"
         },
         {
@@ -328,9 +1051,9 @@
           "position": "OF"
         },
         {
-          "name": "Ceddanne Rafaela",
-          "mlb_team": "BOS",
-          "position": "2B,OF"
+          "name": "Noelvi Marte",
+          "mlb_team": "CIN",
+          "position": "3B,OF"
         },
         {
           "name": "Brendan Donovan",
@@ -343,14 +1066,19 @@
           "position": "1B,2B,3B,SS"
         },
         {
+          "name": "Matt Shaw",
+          "mlb_team": "CHC",
+          "position": "3B"
+        },
+        {
+          "name": "Ceddanne Rafaela",
+          "mlb_team": "BOS",
+          "position": "2B,OF"
+        },
+        {
           "name": "Owen Caissie",
           "mlb_team": "MIA",
           "position": "OF"
-        },
-        {
-          "name": "Eugenio Su\u00e1rez",
-          "mlb_team": "CIN",
-          "position": "3B"
         },
         {
           "name": "Konnor Griffin",
@@ -358,18 +1086,13 @@
           "position": "SS,OF"
         },
         {
-          "name": "Noelvi Marte",
-          "mlb_team": "CIN",
-          "position": "3B,OF"
-        },
-        {
-          "name": "Tarik Skubal",
-          "mlb_team": "DET",
+          "name": "Cade Horton",
+          "mlb_team": "CHC",
           "position": "SP"
         },
         {
-          "name": "Cade Horton",
-          "mlb_team": "CHC",
+          "name": "Bubba Chandler",
+          "mlb_team": "PIT",
           "position": "SP"
         },
         {
@@ -403,8 +1126,8 @@
           "position": "RP"
         },
         {
-          "name": "Bubba Chandler",
-          "mlb_team": "PIT",
+          "name": "Tarik Skubal",
+          "mlb_team": "DET",
           "position": "SP"
         },
         {
@@ -1018,11 +1741,6 @@
           "position": "SP"
         },
         {
-          "name": "Bryce Miller",
-          "mlb_team": "SEA",
-          "position": "SP"
-        },
-        {
           "name": "Dennis Santana",
           "mlb_team": "PIT",
           "position": "RP"
@@ -1048,18 +1766,43 @@
           "position": "SP,RP"
         },
         {
-          "name": "Carlos Rod\u00f3n",
-          "mlb_team": "NYY",
-          "position": "SP"
-        },
-        {
           "name": "Nick Pivetta",
           "mlb_team": "SD",
           "position": "SP"
         },
         {
+          "name": "Michael Wacha",
+          "mlb_team": "KC",
+          "position": "SP"
+        },
+        {
+          "name": "Mitch Keller",
+          "mlb_team": "PIT",
+          "position": "SP"
+        },
+        {
+          "name": "Emerson Hancock",
+          "mlb_team": "SEA",
+          "position": "SP,RP"
+        },
+        {
+          "name": "Corbin Burnes",
+          "mlb_team": "AZ",
+          "position": "SP"
+        },
+        {
           "name": "Joe Musgrove",
           "mlb_team": "SD",
+          "position": "SP"
+        },
+        {
+          "name": "Carlos Rod\u00f3n",
+          "mlb_team": "NYY",
+          "position": "SP"
+        },
+        {
+          "name": "Bryce Miller",
+          "mlb_team": "SEA",
           "position": "SP"
         }
       ]
