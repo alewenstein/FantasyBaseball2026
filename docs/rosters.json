@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-30T15:01:37.160280+00:00",
+  "updated": "2026-05-01T14:14:54.878263+00:00",
   "current_week": 6,
   "matchups": [
     {
@@ -837,9 +837,9 @@
           "position": "RP"
         },
         {
-          "name": "Chase Burns",
-          "mlb_team": "CIN",
-          "position": "SP,RP"
+          "name": "Tanner Scott",
+          "mlb_team": "LAD",
+          "position": "RP"
         },
         {
           "name": "Jakob Junis",
@@ -862,9 +862,9 @@
           "position": "SP"
         },
         {
-          "name": "Tanner Scott",
-          "mlb_team": "LAD",
-          "position": "RP"
+          "name": "Chase Burns",
+          "mlb_team": "CIN",
+          "position": "SP,RP"
         },
         {
           "name": "Jos\u00e9 Soriano",
@@ -1026,14 +1026,14 @@
       "manager": "Caroline",
       "players": [
         {
-          "name": "Dillon Dingler",
-          "mlb_team": "DET",
-          "position": "C"
+          "name": "Liam Hicks",
+          "mlb_team": "MIA",
+          "position": "C,1B"
         },
         {
-          "name": "Salvador Perez",
-          "mlb_team": "KC",
-          "position": "C,1B"
+          "name": "Michael Busch",
+          "mlb_team": "CHC",
+          "position": "1B"
         },
         {
           "name": "Nico Hoerner",
@@ -1061,8 +1061,8 @@
           "position": "OF"
         },
         {
-          "name": "Brandon Marsh",
-          "mlb_team": "PHI",
+          "name": "Randy Arozarena",
+          "mlb_team": "SEA",
           "position": "OF"
         },
         {
@@ -1076,24 +1076,24 @@
           "position": "1B"
         },
         {
-          "name": "Michael Busch",
-          "mlb_team": "CHC",
-          "position": "1B"
+          "name": "Brandon Marsh",
+          "mlb_team": "PHI",
+          "position": "OF"
         },
         {
-          "name": "Liam Hicks",
-          "mlb_team": "MIA",
+          "name": "Dillon Dingler",
+          "mlb_team": "DET",
+          "position": "C"
+        },
+        {
+          "name": "Salvador Perez",
+          "mlb_team": "KC",
           "position": "C,1B"
         },
         {
           "name": "Dansby Swanson",
           "mlb_team": "CHC",
           "position": "SS"
-        },
-        {
-          "name": "Randy Arozarena",
-          "mlb_team": "SEA",
-          "position": "OF"
         },
         {
           "name": "Tarik Skubal",
@@ -1198,9 +1198,9 @@
           "position": "OF"
         },
         {
-          "name": "Willi Castro",
-          "mlb_team": "COL",
-          "position": "2B,3B,OF"
+          "name": "Teoscar Hern\u00e1ndez",
+          "mlb_team": "LAD",
+          "position": "OF"
         },
         {
           "name": "Adolis Garc\u00eda",
@@ -1218,9 +1218,9 @@
           "position": "1B"
         },
         {
-          "name": "Teoscar Hern\u00e1ndez",
-          "mlb_team": "LAD",
-          "position": "OF"
+          "name": "Willi Castro",
+          "mlb_team": "COL",
+          "position": "2B,3B,OF"
         },
         {
           "name": "Logan Gilbert",
@@ -1258,8 +1258,8 @@
           "position": "RP"
         },
         {
-          "name": "Tyler Rogers",
-          "mlb_team": "TOR",
+          "name": "Gabe Speier",
+          "mlb_team": "SEA",
           "position": "RP"
         },
         {
@@ -1268,8 +1268,8 @@
           "position": "SP,RP"
         },
         {
-          "name": "Gabe Speier",
-          "mlb_team": "SEA",
+          "name": "Tyler Rogers",
+          "mlb_team": "TOR",
           "position": "RP"
         },
         {
