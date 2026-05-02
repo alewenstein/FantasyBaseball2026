@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-01T14:14:54.878263+00:00",
+  "updated": "2026-05-02T14:06:58.925353+00:00",
   "current_week": 6,
   "matchups": [
     {
@@ -1041,14 +1041,14 @@
           "position": "2B"
         },
         {
-          "name": "Coby Mayo",
-          "mlb_team": "BAL",
-          "position": "1B,3B"
+          "name": "Casey Schmitt",
+          "mlb_team": "SF",
+          "position": "1B,2B,3B"
         },
         {
-          "name": "Brayan Rocchio",
-          "mlb_team": "CLE",
-          "position": "2B,SS"
+          "name": "Dansby Swanson",
+          "mlb_team": "CHC",
+          "position": "SS"
         },
         {
           "name": "Pete Crow-Armstrong",
@@ -1076,6 +1076,11 @@
           "position": "1B"
         },
         {
+          "name": "Brayan Rocchio",
+          "mlb_team": "CLE",
+          "position": "2B,SS"
+        },
+        {
           "name": "Brandon Marsh",
           "mlb_team": "PHI",
           "position": "OF"
@@ -1091,11 +1096,6 @@
           "position": "C,1B"
         },
         {
-          "name": "Dansby Swanson",
-          "mlb_team": "CHC",
-          "position": "SS"
-        },
-        {
           "name": "Tarik Skubal",
           "mlb_team": "DET",
           "position": "SP"
@@ -1106,13 +1106,13 @@
           "position": "SP,RP"
         },
         {
-          "name": "Matt Brash",
-          "mlb_team": "SEA",
+          "name": "Riley O'Brien",
+          "mlb_team": "STL",
           "position": "RP"
         },
         {
-          "name": "Riley O'Brien",
-          "mlb_team": "STL",
+          "name": "Jose A. Ferrer",
+          "mlb_team": "SEA",
           "position": "RP"
         },
         {
@@ -1223,13 +1223,13 @@
           "position": "2B,3B,OF"
         },
         {
-          "name": "Logan Gilbert",
-          "mlb_team": "SEA",
+          "name": "Zack Wheeler",
+          "mlb_team": "PHI",
           "position": "SP"
         },
         {
-          "name": "Zack Wheeler",
-          "mlb_team": "PHI",
+          "name": "Connelly Early",
+          "mlb_team": "BOS",
           "position": "SP"
         },
         {
@@ -1263,6 +1263,11 @@
           "position": "RP"
         },
         {
+          "name": "Logan Gilbert",
+          "mlb_team": "SEA",
+          "position": "SP"
+        },
+        {
           "name": "Payton Tolle",
           "mlb_team": "BOS",
           "position": "SP,RP"
@@ -1275,11 +1280,6 @@
         {
           "name": "Luis Castillo",
           "mlb_team": "SEA",
-          "position": "SP"
-        },
-        {
-          "name": "Connelly Early",
-          "mlb_team": "BOS",
           "position": "SP"
         },
         {
@@ -1624,13 +1624,13 @@
           "position": "OF"
         },
         {
-          "name": "Drew Rasmussen",
-          "mlb_team": "TB",
+          "name": "Sandy Alcantara",
+          "mlb_team": "MIA",
           "position": "SP"
         },
         {
-          "name": "Sandy Alcantara",
-          "mlb_team": "MIA",
+          "name": "MacKenzie Gore",
+          "mlb_team": "TEX",
           "position": "SP"
         },
         {
@@ -1664,8 +1664,8 @@
           "position": "RP"
         },
         {
-          "name": "MacKenzie Gore",
-          "mlb_team": "TEX",
+          "name": "Drew Rasmussen",
+          "mlb_team": "TB",
           "position": "SP"
         },
         {
