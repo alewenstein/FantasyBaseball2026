@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-08T14:47:26.597408+00:00",
+  "updated": "2026-05-09T14:14:57.391594+00:00",
   "current_week": 7,
   "matchups": [
     {
@@ -1066,11 +1066,6 @@
           "position": "OF"
         },
         {
-          "name": "Liam Hicks",
-          "mlb_team": "MIA",
-          "position": "C,1B"
-        },
-        {
           "name": "Ildemaro Vargas",
           "mlb_team": "AZ",
           "position": "1B,2B"
@@ -1079,6 +1074,11 @@
           "name": "Casey Schmitt",
           "mlb_team": "SF",
           "position": "1B,2B,3B"
+        },
+        {
+          "name": "Liam Hicks",
+          "mlb_team": "MIA",
+          "position": "C,1B"
         },
         {
           "name": "Dillon Dingler",
@@ -1203,9 +1203,9 @@
           "position": "OF"
         },
         {
-          "name": "Willi Castro",
-          "mlb_team": "COL",
-          "position": "2B,3B,OF"
+          "name": "Teoscar Hern\u00e1ndez",
+          "mlb_team": "LAD",
+          "position": "OF"
         },
         {
           "name": "Gabriel Moreno",
@@ -1218,9 +1218,9 @@
           "position": "1B,3B"
         },
         {
-          "name": "Teoscar Hern\u00e1ndez",
-          "mlb_team": "LAD",
-          "position": "OF"
+          "name": "Willi Castro",
+          "mlb_team": "COL",
+          "position": "2B,3B,OF"
         },
         {
           "name": "Nolan Schanuel",
@@ -1674,8 +1674,8 @@
           "position": "RP"
         },
         {
-          "name": "Hunter Gaddis",
-          "mlb_team": "CLE",
+          "name": "Jeremiah Estrada",
+          "mlb_team": "SD",
           "position": "RP"
         },
         {
@@ -1692,11 +1692,6 @@
           "name": "Jackson Holliday",
           "mlb_team": "BAL",
           "position": "2B,SS"
-        },
-        {
-          "name": "Jeremiah Estrada",
-          "mlb_team": "SD",
-          "position": "RP"
         },
         {
           "name": "Gerrit Cole",
