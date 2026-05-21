@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-20T16:22:08.215379+00:00",
+  "updated": "2026-05-21T16:11:48.585727+00:00",
   "current_week": 9,
   "matchups": [
     {
@@ -889,8 +889,8 @@
       "manager": "Adela",
       "players": [
         {
-          "name": "William Contreras",
-          "mlb_team": "MIL",
+          "name": "Dillon Dingler",
+          "mlb_team": "DET",
           "position": "C"
         },
         {
@@ -929,19 +929,19 @@
           "position": "OF"
         },
         {
+          "name": "Kyle Stowers",
+          "mlb_team": "MIA",
+          "position": "OF"
+        },
+        {
           "name": "Brent Rooker",
           "mlb_team": "ATH",
           "position": "OF"
         },
         {
-          "name": "Dillon Dingler",
-          "mlb_team": "DET",
+          "name": "William Contreras",
+          "mlb_team": "MIL",
           "position": "C"
-        },
-        {
-          "name": "Kyle Stowers",
-          "mlb_team": "MIA",
-          "position": "OF"
         },
         {
           "name": "Byron Buxton",
@@ -1021,8 +1021,8 @@
       "manager": "Caroline",
       "players": [
         {
-          "name": "Salvador Perez",
-          "mlb_team": "KC",
+          "name": "Liam Hicks",
+          "mlb_team": "MIA",
           "position": "C,1B"
         },
         {
@@ -1036,14 +1036,14 @@
           "position": "2B"
         },
         {
+          "name": "Zack Gelof",
+          "mlb_team": "ATH",
+          "position": "2B,3B,OF"
+        },
+        {
           "name": "Ezequiel Duran",
           "mlb_team": "TEX",
           "position": "1B,2B,3B,SS,OF"
-        },
-        {
-          "name": "Dansby Swanson",
-          "mlb_team": "CHC",
-          "position": "SS"
         },
         {
           "name": "Pete Crow-Armstrong",
@@ -1071,14 +1071,14 @@
           "position": "OF"
         },
         {
-          "name": "Liam Hicks",
-          "mlb_team": "MIA",
+          "name": "Salvador Perez",
+          "mlb_team": "KC",
           "position": "C,1B"
         },
         {
-          "name": "Zack Gelof",
-          "mlb_team": "ATH",
-          "position": "2B,3B,OF"
+          "name": "Dansby Swanson",
+          "mlb_team": "CHC",
+          "position": "SS"
         },
         {
           "name": "Emerson Hancock",
@@ -1432,9 +1432,9 @@
           "position": "C"
         },
         {
-          "name": "Pete Alonso",
-          "mlb_team": "BAL",
-          "position": "1B"
+          "name": "Colt Keith",
+          "mlb_team": "DET",
+          "position": "1B,2B,3B"
         },
         {
           "name": "Matt McLain",
@@ -1447,8 +1447,8 @@
           "position": "1B,3B"
         },
         {
-          "name": "Bryson Stott",
-          "mlb_team": "PHI",
+          "name": "Nasim Nu\u00f1ez",
+          "mlb_team": "WSH",
           "position": "2B,SS"
         },
         {
@@ -1462,9 +1462,9 @@
           "position": "OF"
         },
         {
-          "name": "Spencer Steer",
-          "mlb_team": "CIN",
-          "position": "1B,OF"
+          "name": "Jake McCarthy",
+          "mlb_team": "COL",
+          "position": "OF"
         },
         {
           "name": "Shohei Ohtani (Batter)",
@@ -1477,19 +1477,19 @@
           "position": "C"
         },
         {
-          "name": "Nasim Nu\u00f1ez",
-          "mlb_team": "WSH",
+          "name": "Pete Alonso",
+          "mlb_team": "BAL",
+          "position": "1B"
+        },
+        {
+          "name": "Bryson Stott",
+          "mlb_team": "PHI",
           "position": "2B,SS"
         },
         {
-          "name": "Jake McCarthy",
-          "mlb_team": "COL",
-          "position": "OF"
-        },
-        {
-          "name": "Colt Keith",
-          "mlb_team": "DET",
-          "position": "1B,2B,3B"
+          "name": "Spencer Steer",
+          "mlb_team": "CIN",
+          "position": "1B,OF"
         },
         {
           "name": "Antonio Senzatela",
@@ -1522,23 +1522,23 @@
           "position": "SP,RP"
         },
         {
-          "name": "Rico Garcia",
-          "mlb_team": "BAL",
-          "position": "RP"
-        },
-        {
           "name": "Casey Mize",
           "mlb_team": "DET",
           "position": "SP"
         },
         {
-          "name": "Yoshinobu Yamamoto",
-          "mlb_team": "LAD",
+          "name": "Chris Sale",
+          "mlb_team": "ATL",
           "position": "SP"
         },
         {
-          "name": "Chris Sale",
-          "mlb_team": "ATL",
+          "name": "Rico Garcia",
+          "mlb_team": "BAL",
+          "position": "RP"
+        },
+        {
+          "name": "Yoshinobu Yamamoto",
+          "mlb_team": "LAD",
           "position": "SP"
         },
         {
@@ -1627,6 +1627,11 @@
           "name": "Jordan Walker",
           "mlb_team": "STL",
           "position": "OF"
+        },
+        {
+          "name": "Luke Raley",
+          "mlb_team": "SEA",
+          "position": "1B,OF"
         },
         {
           "name": "Drew Rasmussen",
@@ -2112,8 +2117,8 @@
           "position": "C"
         },
         {
-          "name": "Yandy D\u00edaz",
-          "mlb_team": "TB",
+          "name": "Matt Olson",
+          "mlb_team": "ATL",
           "position": "1B"
         },
         {
@@ -2122,9 +2127,9 @@
           "position": "2B"
         },
         {
-          "name": "Alex Bregman",
-          "mlb_team": "CHC",
-          "position": "3B"
+          "name": "Kevin McGonigle",
+          "mlb_team": "DET",
+          "position": "3B,SS"
         },
         {
           "name": "Geraldo Perdomo",
@@ -2157,6 +2162,16 @@
           "position": "1B,OF"
         },
         {
+          "name": "Yandy D\u00edaz",
+          "mlb_team": "TB",
+          "position": "1B"
+        },
+        {
+          "name": "Alex Bregman",
+          "mlb_team": "CHC",
+          "position": "3B"
+        },
+        {
           "name": "Corey Seager",
           "mlb_team": "TEX",
           "position": "SS"
@@ -2167,19 +2182,9 @@
           "position": "OF"
         },
         {
-          "name": "Matt Olson",
-          "mlb_team": "ATL",
-          "position": "1B"
-        },
-        {
           "name": "Maikel Garcia",
           "mlb_team": "KC",
           "position": "2B,3B,SS,OF"
-        },
-        {
-          "name": "Kevin McGonigle",
-          "mlb_team": "DET",
-          "position": "3B,SS"
         },
         {
           "name": "Cole Ragans",
