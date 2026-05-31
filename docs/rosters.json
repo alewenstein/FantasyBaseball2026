@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-30T14:24:52.765975+00:00",
+  "updated": "2026-05-31T14:26:17.887245+00:00",
   "current_week": 10,
   "matchups": [
     {
@@ -822,13 +822,13 @@
           "position": "OF"
         },
         {
-          "name": "Jos\u00e9 Soriano",
-          "mlb_team": "LAA",
+          "name": "Paul Skenes",
+          "mlb_team": "PIT",
           "position": "SP"
         },
         {
-          "name": "Paul Skenes",
-          "mlb_team": "PIT",
+          "name": "Robbie Ray",
+          "mlb_team": "SF",
           "position": "SP"
         },
         {
@@ -862,14 +862,14 @@
           "position": "RP"
         },
         {
+          "name": "Jos\u00e9 Soriano",
+          "mlb_team": "LAA",
+          "position": "SP"
+        },
+        {
           "name": "Chase Burns",
           "mlb_team": "CIN",
           "position": "SP,RP"
-        },
-        {
-          "name": "Robbie Ray",
-          "mlb_team": "SF",
-          "position": "SP"
         },
         {
           "name": "Carlos Est\u00e9vez",
@@ -947,6 +947,11 @@
           "name": "Dillon Dingler",
           "mlb_team": "DET",
           "position": "C"
+        },
+        {
+          "name": "Kyle Stowers",
+          "mlb_team": "MIA",
+          "position": "OF"
         },
         {
           "name": "George Kirby",
@@ -1036,9 +1041,9 @@
           "position": "2B"
         },
         {
-          "name": "Eugenio Su\u00e1rez",
-          "mlb_team": "CIN",
-          "position": "3B"
+          "name": "Ezequiel Duran",
+          "mlb_team": "TEX",
+          "position": "1B,2B,3B,SS,OF"
         },
         {
           "name": "Dansby Swanson",
@@ -1061,14 +1066,9 @@
           "position": "OF"
         },
         {
-          "name": "Brooks Lee",
-          "mlb_team": "MIN",
-          "position": "2B,3B,SS"
-        },
-        {
-          "name": "Ezequiel Duran",
-          "mlb_team": "TEX",
-          "position": "1B,2B,3B,SS,OF"
+          "name": "Gavin Sheets",
+          "mlb_team": "SD",
+          "position": "1B,OF"
         },
         {
           "name": "Salvador Perez",
@@ -1076,19 +1076,24 @@
           "position": "C,1B"
         },
         {
-          "name": "Gavin Sheets",
-          "mlb_team": "SD",
-          "position": "1B,OF"
+          "name": "Eugenio Su\u00e1rez",
+          "mlb_team": "CIN",
+          "position": "3B"
         },
         {
-          "name": "Kyle Harrison",
-          "mlb_team": "MIL",
-          "position": "SP,RP"
+          "name": "Brooks Lee",
+          "mlb_team": "MIN",
+          "position": "2B,3B,SS"
         },
         {
-          "name": "Michael Soroka",
-          "mlb_team": "AZ",
-          "position": "SP,RP"
+          "name": "Trey Yesavage",
+          "mlb_team": "TOR",
+          "position": "SP"
+        },
+        {
+          "name": "Parker Messick",
+          "mlb_team": "CLE",
+          "position": "SP"
         },
         {
           "name": "Jos\u00e9 A. Ferrer",
@@ -1121,19 +1126,19 @@
           "position": "RP"
         },
         {
-          "name": "Emerson Hancock",
-          "mlb_team": "SEA",
+          "name": "Michael Soroka",
+          "mlb_team": "AZ",
           "position": "SP,RP"
         },
         {
-          "name": "Trey Yesavage",
-          "mlb_team": "TOR",
-          "position": "SP"
+          "name": "Kyle Harrison",
+          "mlb_team": "MIL",
+          "position": "SP,RP"
         },
         {
-          "name": "Parker Messick",
-          "mlb_team": "CLE",
-          "position": "SP"
+          "name": "Emerson Hancock",
+          "mlb_team": "SEA",
+          "position": "SP,RP"
         },
         {
           "name": "Brendan Donovan",
@@ -1213,8 +1218,8 @@
           "position": "1B,3B"
         },
         {
-          "name": "Logan Gilbert",
-          "mlb_team": "SEA",
+          "name": "Nick Lodolo",
+          "mlb_team": "CIN",
           "position": "SP"
         },
         {
@@ -1258,6 +1263,11 @@
           "position": "SP"
         },
         {
+          "name": "Logan Gilbert",
+          "mlb_team": "SEA",
+          "position": "SP"
+        },
+        {
           "name": "Payton Tolle",
           "mlb_team": "BOS",
           "position": "SP,RP"
@@ -1268,19 +1278,14 @@
           "position": "SP"
         },
         {
-          "name": "Nick Lodolo",
-          "mlb_team": "CIN",
-          "position": "SP"
+          "name": "Cal Raleigh",
+          "mlb_team": "SEA",
+          "position": "C"
         },
         {
           "name": "Teoscar Hern\u00e1ndez",
           "mlb_team": "LAD",
           "position": "OF"
-        },
-        {
-          "name": "Cal Raleigh",
-          "mlb_team": "SEA",
-          "position": "C"
         },
         {
           "name": "Edwin D\u00edaz",
@@ -1365,13 +1370,13 @@
           "position": "OF"
         },
         {
-          "name": "Taj Bradley",
-          "mlb_team": "MIN",
+          "name": "Jes\u00fas Luzardo",
+          "mlb_team": "PHI",
           "position": "SP"
         },
         {
-          "name": "Shota Imanaga",
-          "mlb_team": "CHC",
+          "name": "Jacob Misiorowski",
+          "mlb_team": "MIL",
           "position": "SP"
         },
         {
@@ -1405,13 +1410,13 @@
           "position": "SP"
         },
         {
-          "name": "Jes\u00fas Luzardo",
-          "mlb_team": "PHI",
+          "name": "Taj Bradley",
+          "mlb_team": "MIN",
           "position": "SP"
         },
         {
-          "name": "Jacob Misiorowski",
-          "mlb_team": "MIL",
+          "name": "Shota Imanaga",
+          "mlb_team": "CHC",
           "position": "SP"
         }
       ]
@@ -1579,9 +1584,9 @@
           "position": "2B,SS"
         },
         {
-          "name": "Nolan Arenado",
-          "mlb_team": "AZ",
-          "position": "3B"
+          "name": "Casey Schmitt",
+          "mlb_team": "SF",
+          "position": "1B,2B,3B,OF"
         },
         {
           "name": "Bobby Witt Jr.",
@@ -1614,9 +1619,9 @@
           "position": "OF"
         },
         {
-          "name": "Casey Schmitt",
-          "mlb_team": "SF",
-          "position": "1B,2B,3B,OF"
+          "name": "Nolan Arenado",
+          "mlb_team": "AZ",
+          "position": "3B"
         },
         {
           "name": "Jordan Walker",
@@ -1634,8 +1639,8 @@
           "position": "SP"
         },
         {
-          "name": "Davis Martin",
-          "mlb_team": "CWS",
+          "name": "Michael King",
+          "mlb_team": "SD",
           "position": "SP"
         },
         {
@@ -1669,8 +1674,8 @@
           "position": "RP"
         },
         {
-          "name": "Michael King",
-          "mlb_team": "SD",
+          "name": "Davis Martin",
+          "mlb_team": "CWS",
           "position": "SP"
         },
         {
@@ -1741,14 +1746,14 @@
           "position": "OF"
         },
         {
-          "name": "Juan Soto",
-          "mlb_team": "NYM",
-          "position": "OF"
-        },
-        {
           "name": "Angel Mart\u00ednez",
           "mlb_team": "CLE",
           "position": "2B,OF"
+        },
+        {
+          "name": "Juan Soto",
+          "mlb_team": "NYM",
+          "position": "OF"
         },
         {
           "name": "Michael Wacha",
@@ -1781,16 +1786,6 @@
           "position": "SP"
         },
         {
-          "name": "Mitch Keller",
-          "mlb_team": "PIT",
-          "position": "SP"
-        },
-        {
-          "name": "Ryne Nelson",
-          "mlb_team": "AZ",
-          "position": "SP,RP"
-        },
-        {
           "name": "Bubba Chandler",
           "mlb_team": "PIT",
           "position": "SP"
@@ -1799,6 +1794,16 @@
           "name": "Bryce Miller",
           "mlb_team": "SEA",
           "position": "SP"
+        },
+        {
+          "name": "Mitch Keller",
+          "mlb_team": "PIT",
+          "position": "SP"
+        },
+        {
+          "name": "Ryne Nelson",
+          "mlb_team": "AZ",
+          "position": "SP,RP"
         },
         {
           "name": "Tyler Glasnow",
