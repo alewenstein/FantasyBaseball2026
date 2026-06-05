@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04T16:17:37.232426+00:00",
+  "updated": "2026-06-05T15:49:15.722941+00:00",
   "current_week": 11,
   "matchups": [
     {
@@ -899,9 +899,9 @@
           "position": "C"
         },
         {
-          "name": "Vinnie Pasquantino",
-          "mlb_team": "KC",
-          "position": "1B"
+          "name": "Sal Stewart",
+          "mlb_team": "CIN",
+          "position": "1B,2B,3B"
         },
         {
           "name": "A.J. Ewing",
@@ -909,9 +909,9 @@
           "position": "2B,OF"
         },
         {
-          "name": "Sal Stewart",
-          "mlb_team": "CIN",
-          "position": "1B,2B,3B"
+          "name": "JJ Wetherholt",
+          "mlb_team": "STL",
+          "position": "2B,3B,SS"
         },
         {
           "name": "Jeremy Pe\u00f1a",
@@ -944,9 +944,9 @@
           "position": "OF"
         },
         {
-          "name": "JJ Wetherholt",
-          "mlb_team": "STL",
-          "position": "2B,3B,SS"
+          "name": "Vinnie Pasquantino",
+          "mlb_team": "KC",
+          "position": "1B"
         },
         {
           "name": "Dillon Dingler",
@@ -1340,13 +1340,13 @@
           "position": "OF"
         },
         {
-          "name": "Riley Greene",
-          "mlb_team": "DET",
+          "name": "Jarren Duran",
+          "mlb_team": "BOS",
           "position": "OF"
         },
         {
-          "name": "Jarren Duran",
-          "mlb_team": "BOS",
+          "name": "Lawrence Butler",
+          "mlb_team": "ATH",
           "position": "OF"
         },
         {
@@ -1360,9 +1360,9 @@
           "position": "SS"
         },
         {
-          "name": "Trevor Story",
-          "mlb_team": "BOS",
-          "position": "SS"
+          "name": "Riley Greene",
+          "mlb_team": "DET",
+          "position": "OF"
         },
         {
           "name": "Wyatt Langford",
@@ -1370,18 +1370,18 @@
           "position": "OF"
         },
         {
-          "name": "Lawrence Butler",
-          "mlb_team": "ATH",
-          "position": "OF"
-        },
-        {
-          "name": "Jes\u00fas Luzardo",
-          "mlb_team": "PHI",
-          "position": "SP"
+          "name": "Anthony Volpe",
+          "mlb_team": "NYY",
+          "position": "SS"
         },
         {
           "name": "Jacob Misiorowski",
           "mlb_team": "MIL",
+          "position": "SP"
+        },
+        {
+          "name": "Jacob deGrom",
+          "mlb_team": "TEX",
           "position": "SP"
         },
         {
@@ -1393,11 +1393,6 @@
           "name": "Devin Williams",
           "mlb_team": "NYM",
           "position": "RP"
-        },
-        {
-          "name": "Jacob deGrom",
-          "mlb_team": "TEX",
-          "position": "SP"
         },
         {
           "name": "Gavin Williams",
@@ -1415,13 +1410,18 @@
           "position": "SP"
         },
         {
-          "name": "Taj Bradley",
-          "mlb_team": "MIN",
+          "name": "Shota Imanaga",
+          "mlb_team": "CHC",
           "position": "SP"
         },
         {
-          "name": "Shota Imanaga",
-          "mlb_team": "CHC",
+          "name": "Jes\u00fas Luzardo",
+          "mlb_team": "PHI",
+          "position": "SP"
+        },
+        {
+          "name": "Taj Bradley",
+          "mlb_team": "MIN",
           "position": "SP"
         }
       ]
@@ -1527,24 +1527,24 @@
           "position": "RP"
         },
         {
-          "name": "Reynaldo L\u00f3pez",
-          "mlb_team": "ATL",
-          "position": "SP,RP"
-        },
-        {
           "name": "Rico Garcia",
           "mlb_team": "BAL",
           "position": "RP"
         },
         {
-          "name": "Casey Mize",
-          "mlb_team": "DET",
-          "position": "SP"
-        },
-        {
           "name": "Reid Detmers",
           "mlb_team": "LAA",
           "position": "SP,RP"
+        },
+        {
+          "name": "Reynaldo L\u00f3pez",
+          "mlb_team": "ATL",
+          "position": "SP,RP"
+        },
+        {
+          "name": "Casey Mize",
+          "mlb_team": "DET",
+          "position": "SP"
         },
         {
           "name": "Carlos Correa",
@@ -1604,14 +1604,9 @@
           "position": "OF"
         },
         {
-          "name": "Jordan Walker",
-          "mlb_team": "STL",
+          "name": "Wilyer Abreu",
+          "mlb_team": "BOS",
           "position": "OF"
-        },
-        {
-          "name": "Luke Raley",
-          "mlb_team": "SEA",
-          "position": "1B,OF"
         },
         {
           "name": "Ryan O'Hearn",
@@ -1624,18 +1619,23 @@
           "position": "1B"
         },
         {
-          "name": "Wilyer Abreu",
-          "mlb_team": "BOS",
+          "name": "Jackson Holliday",
+          "mlb_team": "BAL",
+          "position": "2B,SS"
+        },
+        {
+          "name": "Jordan Walker",
+          "mlb_team": "STL",
           "position": "OF"
+        },
+        {
+          "name": "Luke Raley",
+          "mlb_team": "SEA",
+          "position": "1B,OF"
         },
         {
           "name": "Andr\u00e9s Gim\u00e9nez",
           "mlb_team": "TOR",
-          "position": "2B,SS"
-        },
-        {
-          "name": "Jackson Holliday",
-          "mlb_team": "BAL",
           "position": "2B,SS"
         },
         {
@@ -1781,16 +1781,6 @@
           "position": "SP"
         },
         {
-          "name": "Bubba Chandler",
-          "mlb_team": "PIT",
-          "position": "SP"
-        },
-        {
-          "name": "Ryne Nelson",
-          "mlb_team": "AZ",
-          "position": "SP,RP"
-        },
-        {
           "name": "Andrew Abbott",
           "mlb_team": "CIN",
           "position": "SP"
@@ -1799,6 +1789,16 @@
           "name": "Bryce Miller",
           "mlb_team": "SEA",
           "position": "SP"
+        },
+        {
+          "name": "Bubba Chandler",
+          "mlb_team": "PIT",
+          "position": "SP"
+        },
+        {
+          "name": "Ryne Nelson",
+          "mlb_team": "AZ",
+          "position": "SP,RP"
         },
         {
           "name": "Tyler Glasnow",
