@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05T15:49:15.722941+00:00",
+  "updated": "2026-06-06T14:25:15.984110+00:00",
   "current_week": 11,
   "matchups": [
     {
@@ -899,9 +899,9 @@
           "position": "C"
         },
         {
-          "name": "Sal Stewart",
-          "mlb_team": "CIN",
-          "position": "1B,2B,3B"
+          "name": "Vinnie Pasquantino",
+          "mlb_team": "KC",
+          "position": "1B"
         },
         {
           "name": "A.J. Ewing",
@@ -909,9 +909,9 @@
           "position": "2B,OF"
         },
         {
-          "name": "JJ Wetherholt",
-          "mlb_team": "STL",
-          "position": "2B,3B,SS"
+          "name": "Sal Stewart",
+          "mlb_team": "CIN",
+          "position": "1B,2B,3B"
         },
         {
           "name": "Jeremy Pe\u00f1a",
@@ -939,19 +939,19 @@
           "position": "OF"
         },
         {
+          "name": "Dillon Dingler",
+          "mlb_team": "DET",
+          "position": "C"
+        },
+        {
           "name": "Byron Buxton",
           "mlb_team": "MIN",
           "position": "OF"
         },
         {
-          "name": "Vinnie Pasquantino",
-          "mlb_team": "KC",
-          "position": "1B"
-        },
-        {
-          "name": "Dillon Dingler",
-          "mlb_team": "DET",
-          "position": "C"
+          "name": "JJ Wetherholt",
+          "mlb_team": "STL",
+          "position": "2B,3B,SS"
         },
         {
           "name": "Kyle Stowers",
@@ -964,8 +964,8 @@
           "position": "SP"
         },
         {
-          "name": "George Kirby",
-          "mlb_team": "SEA",
+          "name": "Will Warren",
+          "mlb_team": "NYY",
           "position": "SP"
         },
         {
@@ -977,11 +977,6 @@
           "name": "Tony Santillan",
           "mlb_team": "CIN",
           "position": "RP"
-        },
-        {
-          "name": "Freddy Peralta",
-          "mlb_team": "NYM",
-          "position": "SP"
         },
         {
           "name": "Nolan McLean",
@@ -999,13 +994,18 @@
           "position": "RP"
         },
         {
-          "name": "Will Warren",
-          "mlb_team": "NYY",
+          "name": "Kyle Bradish",
+          "mlb_team": "BAL",
           "position": "SP"
         },
         {
-          "name": "Kyle Bradish",
-          "mlb_team": "BAL",
+          "name": "Freddy Peralta",
+          "mlb_team": "NYM",
+          "position": "SP"
+        },
+        {
+          "name": "George Kirby",
+          "mlb_team": "SEA",
           "position": "SP"
         },
         {
@@ -1031,8 +1031,8 @@
       "manager": "Caroline",
       "players": [
         {
-          "name": "Salvador Perez",
-          "mlb_team": "KC",
+          "name": "Liam Hicks",
+          "mlb_team": "MIA",
           "position": "C,1B"
         },
         {
@@ -1071,11 +1071,6 @@
           "position": "OF"
         },
         {
-          "name": "Brooks Lee",
-          "mlb_team": "MIN",
-          "position": "2B,3B,SS"
-        },
-        {
           "name": "Gavin Sheets",
           "mlb_team": "SD",
           "position": "1B,OF"
@@ -1086,8 +1081,13 @@
           "position": "1B,2B,3B,SS,OF"
         },
         {
-          "name": "Liam Hicks",
-          "mlb_team": "MIA",
+          "name": "Brooks Lee",
+          "mlb_team": "MIN",
+          "position": "2B,3B,SS"
+        },
+        {
+          "name": "Salvador Perez",
+          "mlb_team": "KC",
           "position": "C,1B"
         },
         {
@@ -1223,8 +1223,8 @@
           "position": "1B,3B"
         },
         {
-          "name": "Zack Wheeler",
-          "mlb_team": "PHI",
+          "name": "Nick Lodolo",
+          "mlb_team": "CIN",
           "position": "SP"
         },
         {
@@ -1263,6 +1263,11 @@
           "position": "RP"
         },
         {
+          "name": "Zack Wheeler",
+          "mlb_team": "PHI",
+          "position": "SP"
+        },
+        {
           "name": "Payton Tolle",
           "mlb_team": "BOS",
           "position": "SP,RP"
@@ -1275,11 +1280,6 @@
         {
           "name": "Connelly Early",
           "mlb_team": "BOS",
-          "position": "SP"
-        },
-        {
-          "name": "Nick Lodolo",
-          "mlb_team": "CIN",
           "position": "SP"
         },
         {
@@ -1644,8 +1644,8 @@
           "position": "SP"
         },
         {
-          "name": "Gerrit Cole",
-          "mlb_team": "NYY",
+          "name": "Drew Rasmussen",
+          "mlb_team": "TB",
           "position": "SP"
         },
         {
@@ -1679,13 +1679,13 @@
           "position": "RP"
         },
         {
-          "name": "Davis Martin",
-          "mlb_team": "CWS",
+          "name": "Gerrit Cole",
+          "mlb_team": "NYY",
           "position": "SP"
         },
         {
-          "name": "Drew Rasmussen",
-          "mlb_team": "TB",
+          "name": "Davis Martin",
+          "mlb_team": "CWS",
           "position": "SP"
         }
       ]
@@ -1756,7 +1756,7 @@
           "position": "SP"
         },
         {
-          "name": "Mitch Keller",
+          "name": "Bubba Chandler",
           "mlb_team": "PIT",
           "position": "SP"
         },
@@ -1791,7 +1791,7 @@
           "position": "SP"
         },
         {
-          "name": "Bubba Chandler",
+          "name": "Mitch Keller",
           "mlb_team": "PIT",
           "position": "SP"
         },
