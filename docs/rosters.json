@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-12T16:12:22.661934+00:00",
+  "updated": "2026-06-13T14:56:03.505003+00:00",
   "current_week": 12,
   "matchups": [
     {
@@ -787,14 +787,14 @@
           "position": "OF"
         },
         {
-          "name": "Trent Grisham",
-          "mlb_team": "NYY",
-          "position": "OF"
-        },
-        {
           "name": "Jose Altuve",
           "mlb_team": "HOU",
           "position": "2B,OF"
+        },
+        {
+          "name": "Daylen Lile",
+          "mlb_team": "WSH",
+          "position": "OF"
         },
         {
           "name": "Manny Machado",
@@ -807,8 +807,8 @@
           "position": "2B,3B"
         },
         {
-          "name": "Daylen Lile",
-          "mlb_team": "WSH",
+          "name": "Trent Grisham",
+          "mlb_team": "NYY",
           "position": "OF"
         },
         {
@@ -827,8 +827,8 @@
           "position": "SP"
         },
         {
-          "name": "Robbie Ray",
-          "mlb_team": "SF",
+          "name": "Jos\u00e9 Soriano",
+          "mlb_team": "LAA",
           "position": "SP"
         },
         {
@@ -862,14 +862,14 @@
           "position": "SP"
         },
         {
+          "name": "Robbie Ray",
+          "mlb_team": "SF",
+          "position": "SP"
+        },
+        {
           "name": "Chase Burns",
           "mlb_team": "CIN",
           "position": "SP,RP"
-        },
-        {
-          "name": "Jos\u00e9 Soriano",
-          "mlb_team": "LAA",
-          "position": "SP"
         },
         {
           "name": "Elly De La Cruz",
@@ -946,7 +946,7 @@
         {
           "name": "Kyle Stowers",
           "mlb_team": "MIA",
-          "position": "OF"
+          "position": "1B,OF"
         },
         {
           "name": "Brent Rooker",
@@ -1041,9 +1041,9 @@
           "position": "1B"
         },
         {
-          "name": "Nico Hoerner",
-          "mlb_team": "CHC",
-          "position": "2B,SS"
+          "name": "Mauricio Dub\u00f3n",
+          "mlb_team": "ATL",
+          "position": "2B,3B,SS,OF"
         },
         {
           "name": "Brooks Lee",
@@ -1071,19 +1071,19 @@
           "position": "OF"
         },
         {
-          "name": "Mauricio Dub\u00f3n",
-          "mlb_team": "ATL",
-          "position": "2B,3B,SS,OF"
-        },
-        {
-          "name": "Salvador Perez",
-          "mlb_team": "KC",
-          "position": "C,1B"
+          "name": "Nico Hoerner",
+          "mlb_team": "CHC",
+          "position": "2B,SS"
         },
         {
           "name": "Brandon Marsh",
           "mlb_team": "PHI",
           "position": "OF"
+        },
+        {
+          "name": "Salvador Perez",
+          "mlb_team": "KC",
+          "position": "C,1B"
         },
         {
           "name": "Eugenio Su\u00e1rez",
@@ -1243,6 +1243,11 @@
           "position": "RP"
         },
         {
+          "name": "Trevor Megill",
+          "mlb_team": "MIL",
+          "position": "RP"
+        },
+        {
           "name": "Paul Sewald",
           "mlb_team": "AZ",
           "position": "RP"
@@ -1253,29 +1258,9 @@
           "position": "RP"
         },
         {
-          "name": "Nick Lodolo",
-          "mlb_team": "CIN",
-          "position": "SP"
-        },
-        {
           "name": "Jason Adam",
           "mlb_team": "SD",
           "position": "RP"
-        },
-        {
-          "name": "Trevor Megill",
-          "mlb_team": "MIL",
-          "position": "RP"
-        },
-        {
-          "name": "Logan Gilbert",
-          "mlb_team": "SEA",
-          "position": "SP"
-        },
-        {
-          "name": "Payton Tolle",
-          "mlb_team": "BOS",
-          "position": "SP,RP"
         },
         {
           "name": "Connelly Early",
@@ -1286,6 +1271,21 @@
           "name": "Bryce Elder",
           "mlb_team": "ATL",
           "position": "SP"
+        },
+        {
+          "name": "Nick Lodolo",
+          "mlb_team": "CIN",
+          "position": "SP"
+        },
+        {
+          "name": "Logan Gilbert",
+          "mlb_team": "SEA",
+          "position": "SP"
+        },
+        {
+          "name": "Payton Tolle",
+          "mlb_team": "BOS",
+          "position": "SP,RP"
         },
         {
           "name": "Munetaka Murakami",
@@ -1532,11 +1532,6 @@
           "position": "RP"
         },
         {
-          "name": "Reid Detmers",
-          "mlb_team": "LAA",
-          "position": "SP,RP"
-        },
-        {
           "name": "Chris Sale",
           "mlb_team": "ATL",
           "position": "SP"
@@ -1544,6 +1539,11 @@
         {
           "name": "Antonio Senzatela",
           "mlb_team": "COL",
+          "position": "SP,RP"
+        },
+        {
+          "name": "Reid Detmers",
+          "mlb_team": "LAA",
           "position": "SP,RP"
         },
         {
@@ -1791,11 +1791,6 @@
           "position": "SP"
         },
         {
-          "name": "Ryne Nelson",
-          "mlb_team": "AZ",
-          "position": "SP,RP"
-        },
-        {
           "name": "Shane McClanahan",
           "mlb_team": "TB",
           "position": "SP"
@@ -1804,6 +1799,11 @@
           "name": "Mitch Keller",
           "mlb_team": "PIT",
           "position": "SP"
+        },
+        {
+          "name": "Ryne Nelson",
+          "mlb_team": "AZ",
+          "position": "SP,RP"
         },
         {
           "name": "Andrew Abbott",
