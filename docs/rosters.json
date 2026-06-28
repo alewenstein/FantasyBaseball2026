@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T14:23:34.105033+00:00",
+  "updated": "2026-06-28T14:43:16.689522+00:00",
   "current_week": 14,
   "matchups": [
     {
@@ -827,9 +827,9 @@
           "position": "SP"
         },
         {
-          "name": "Chase Burns",
-          "mlb_team": "CIN",
-          "position": "SP,RP"
+          "name": "Robbie Ray",
+          "mlb_team": "SF",
+          "position": "SP"
         },
         {
           "name": "Gregory Soto",
@@ -862,13 +862,13 @@
           "position": "SP"
         },
         {
-          "name": "Jos\u00e9 Soriano",
-          "mlb_team": "LAA",
-          "position": "SP"
+          "name": "Chase Burns",
+          "mlb_team": "CIN",
+          "position": "SP,RP"
         },
         {
-          "name": "Robbie Ray",
-          "mlb_team": "SF",
+          "name": "Jos\u00e9 Soriano",
+          "mlb_team": "LAA",
           "position": "SP"
         },
         {
@@ -1036,14 +1036,14 @@
           "position": "C,1B"
         },
         {
-          "name": "Michael Busch",
-          "mlb_team": "CHC",
+          "name": "Jake Burger",
+          "mlb_team": "TEX",
           "position": "1B"
         },
         {
-          "name": "Nico Hoerner",
-          "mlb_team": "CHC",
-          "position": "2B,SS"
+          "name": "Mauricio Dub\u00f3n",
+          "mlb_team": "ATL",
+          "position": "2B,3B,SS,OF"
         },
         {
           "name": "Eugenio Su\u00e1rez",
@@ -1071,8 +1071,8 @@
           "position": "OF"
         },
         {
-          "name": "Jake Burger",
-          "mlb_team": "TEX",
+          "name": "Michael Busch",
+          "mlb_team": "CHC",
           "position": "1B"
         },
         {
@@ -1081,9 +1081,9 @@
           "position": "OF"
         },
         {
-          "name": "Mauricio Dub\u00f3n",
-          "mlb_team": "ATL",
-          "position": "2B,3B,SS,OF"
+          "name": "Nico Hoerner",
+          "mlb_team": "CHC",
+          "position": "2B,SS"
         },
         {
           "name": "Ezequiel Duran",
@@ -1380,13 +1380,13 @@
           "position": "OF"
         },
         {
-          "name": "Shota Imanaga",
-          "mlb_team": "CHC",
+          "name": "Jacob Misiorowski",
+          "mlb_team": "MIL",
           "position": "SP"
         },
         {
-          "name": "Jacob Misiorowski",
-          "mlb_team": "MIL",
+          "name": "Gavin Williams",
+          "mlb_team": "CLE",
           "position": "SP"
         },
         {
@@ -1420,14 +1420,14 @@
           "position": "SP"
         },
         {
+          "name": "Shota Imanaga",
+          "mlb_team": "CHC",
+          "position": "SP"
+        },
+        {
           "name": "Griffin Jax",
           "mlb_team": "TB",
           "position": "SP,RP"
-        },
-        {
-          "name": "Gavin Williams",
-          "mlb_team": "CLE",
-          "position": "SP"
         }
       ]
     },
