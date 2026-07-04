@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T15:02:18.676952+00:00",
+  "updated": "2026-07-04T14:24:08.766854+00:00",
   "current_week": 15,
   "matchups": [
     {
@@ -797,19 +797,14 @@
           "position": "OF"
         },
         {
-          "name": "Elly De La Cruz",
-          "mlb_team": "CIN",
-          "position": "SS"
-        },
-        {
-          "name": "Jazz Chisholm Jr.",
-          "mlb_team": "NYY",
-          "position": "2B,3B"
-        },
-        {
           "name": "Kerry Carpenter",
           "mlb_team": "DET",
           "position": "OF"
+        },
+        {
+          "name": "Elly De La Cruz",
+          "mlb_team": "CIN",
+          "position": "SS"
         },
         {
           "name": "Daylen Lile",
@@ -822,14 +817,19 @@
           "position": "1B,3B"
         },
         {
+          "name": "Jazz Chisholm Jr.",
+          "mlb_team": "NYY",
+          "position": "2B,3B"
+        },
+        {
           "name": "Paul Skenes",
           "mlb_team": "PIT",
           "position": "SP"
         },
         {
-          "name": "Chase Burns",
-          "mlb_team": "CIN",
-          "position": "SP,RP"
+          "name": "Robbie Ray",
+          "mlb_team": "SF",
+          "position": "SP"
         },
         {
           "name": "Gregory Soto",
@@ -862,13 +862,13 @@
           "position": "SP"
         },
         {
-          "name": "Jos\u00e9 Soriano",
-          "mlb_team": "LAA",
-          "position": "SP"
+          "name": "Chase Burns",
+          "mlb_team": "CIN",
+          "position": "SP,RP"
         },
         {
-          "name": "Robbie Ray",
-          "mlb_team": "SF",
+          "name": "Jos\u00e9 Soriano",
+          "mlb_team": "LAA",
           "position": "SP"
         },
         {
@@ -904,14 +904,19 @@
           "position": "1B"
         },
         {
-          "name": "JJ Wetherholt",
-          "mlb_team": "STL",
-          "position": "2B,3B,SS"
+          "name": "A.J. Ewing",
+          "mlb_team": "NYM",
+          "position": "2B,OF"
         },
         {
           "name": "Sal Stewart",
           "mlb_team": "CIN",
           "position": "1B,2B,3B"
+        },
+        {
+          "name": "JJ Wetherholt",
+          "mlb_team": "STL",
+          "position": "2B,3B,SS"
         },
         {
           "name": "Yordan Alvarez",
@@ -924,9 +929,9 @@
           "position": "1B,OF"
         },
         {
-          "name": "A.J. Ewing",
-          "mlb_team": "NYM",
-          "position": "2B,OF"
+          "name": "Jac Caglianone",
+          "mlb_team": "KC",
+          "position": "1B,OF"
         },
         {
           "name": "Dillon Dingler",
@@ -937,11 +942,6 @@
           "name": "Byron Buxton",
           "mlb_team": "MIN",
           "position": "OF"
-        },
-        {
-          "name": "Jac Caglianone",
-          "mlb_team": "KC",
-          "position": "1B,OF"
         },
         {
           "name": "Brandon Nimmo",
@@ -1036,8 +1036,8 @@
           "position": "C,1B"
         },
         {
-          "name": "Jake Burger",
-          "mlb_team": "TEX",
+          "name": "Michael Busch",
+          "mlb_team": "CHC",
           "position": "1B"
         },
         {
@@ -1051,18 +1051,13 @@
           "position": "3B"
         },
         {
-          "name": "Ezequiel Duran",
-          "mlb_team": "TEX",
-          "position": "1B,2B,3B,SS,OF"
+          "name": "Brooks Lee",
+          "mlb_team": "MIN",
+          "position": "2B,3B,SS"
         },
         {
           "name": "Pete Crow-Armstrong",
           "mlb_team": "CHC",
-          "position": "OF"
-        },
-        {
-          "name": "Brandon Marsh",
-          "mlb_team": "PHI",
           "position": "OF"
         },
         {
@@ -1071,14 +1066,19 @@
           "position": "OF"
         },
         {
+          "name": "Brandon Marsh",
+          "mlb_team": "PHI",
+          "position": "OF"
+        },
+        {
+          "name": "Jake Burger",
+          "mlb_team": "TEX",
+          "position": "1B"
+        },
+        {
           "name": "Mauricio Dub\u00f3n",
           "mlb_team": "ATL",
           "position": "2B,3B,SS,OF"
-        },
-        {
-          "name": "Michael Busch",
-          "mlb_team": "CHC",
-          "position": "1B"
         },
         {
           "name": "Carson Benge",
@@ -1086,18 +1086,18 @@
           "position": "OF"
         },
         {
-          "name": "Brooks Lee",
-          "mlb_team": "MIN",
-          "position": "2B,3B,SS"
+          "name": "Ezequiel Duran",
+          "mlb_team": "TEX",
+          "position": "1B,2B,3B,SS,OF"
         },
         {
-          "name": "Trey Yesavage",
-          "mlb_team": "TOR",
-          "position": "SP"
+          "name": "Emerson Hancock",
+          "mlb_team": "SEA",
+          "position": "SP,RP"
         },
         {
-          "name": "Tarik Skubal",
-          "mlb_team": "DET",
+          "name": "Parker Messick",
+          "mlb_team": "CLE",
           "position": "SP"
         },
         {
@@ -1116,11 +1116,6 @@
           "position": "RP"
         },
         {
-          "name": "Hogan Harris",
-          "mlb_team": "ATH",
-          "position": "RP"
-        },
-        {
           "name": "Will Klein",
           "mlb_team": "LAD",
           "position": "RP"
@@ -1131,19 +1126,24 @@
           "position": "RP"
         },
         {
-          "name": "Parker Messick",
-          "mlb_team": "CLE",
+          "name": "Hunter Greene",
+          "mlb_team": "CIN",
           "position": "SP"
-        },
-        {
-          "name": "Emerson Hancock",
-          "mlb_team": "SEA",
-          "position": "SP,RP"
         },
         {
           "name": "Kyle Harrison",
           "mlb_team": "MIL",
           "position": "SP,RP"
+        },
+        {
+          "name": "Tarik Skubal",
+          "mlb_team": "DET",
+          "position": "SP"
+        },
+        {
+          "name": "Trey Yesavage",
+          "mlb_team": "TOR",
+          "position": "SP"
         },
         {
           "name": "Ronald Acu\u00f1a Jr.",
@@ -1154,11 +1154,6 @@
           "name": "Michael Soroka",
           "mlb_team": "AZ",
           "position": "SP,RP"
-        },
-        {
-          "name": "Hunter Greene",
-          "mlb_team": "CIN",
-          "position": "SP"
         }
       ]
     },
@@ -1375,13 +1370,13 @@
           "position": "SS"
         },
         {
-          "name": "Griffin Jax",
-          "mlb_team": "TB",
-          "position": "SP,RP"
-        },
-        {
           "name": "Jacob Misiorowski",
           "mlb_team": "MIL",
+          "position": "SP"
+        },
+        {
+          "name": "Jes\u00fas Luzardo",
+          "mlb_team": "PHI",
           "position": "SP"
         },
         {
@@ -1415,13 +1410,13 @@
           "position": "SP"
         },
         {
-          "name": "Jacob deGrom",
-          "mlb_team": "TEX",
-          "position": "SP"
+          "name": "Griffin Jax",
+          "mlb_team": "TB",
+          "position": "SP,RP"
         },
         {
-          "name": "Jes\u00fas Luzardo",
-          "mlb_team": "PHI",
+          "name": "Jacob deGrom",
+          "mlb_team": "TEX",
           "position": "SP"
         }
       ]
@@ -1442,8 +1437,8 @@
           "position": "1B"
         },
         {
-          "name": "Bryson Stott",
-          "mlb_team": "PHI",
+          "name": "Matt McLain",
+          "mlb_team": "CIN",
           "position": "2B,SS"
         },
         {
@@ -1482,8 +1477,8 @@
           "position": "C"
         },
         {
-          "name": "Matt McLain",
-          "mlb_team": "CIN",
+          "name": "Bryson Stott",
+          "mlb_team": "PHI",
           "position": "2B,SS"
         },
         {
@@ -1497,13 +1492,13 @@
           "position": "1B,2B,3B"
         },
         {
-          "name": "Yoshinobu Yamamoto",
-          "mlb_team": "LAD",
-          "position": "SP"
-        },
-        {
           "name": "Grant Taylor",
           "mlb_team": "CWS",
+          "position": "SP,RP"
+        },
+        {
+          "name": "Antonio Senzatela",
+          "mlb_team": "COL",
           "position": "SP,RP"
         },
         {
@@ -1522,11 +1517,6 @@
           "position": "RP"
         },
         {
-          "name": "Casey Mize",
-          "mlb_team": "DET",
-          "position": "SP"
-        },
-        {
           "name": "Bryan Baker",
           "mlb_team": "TB",
           "position": "RP"
@@ -1537,9 +1527,14 @@
           "position": "RP"
         },
         {
-          "name": "Antonio Senzatela",
-          "mlb_team": "COL",
-          "position": "SP,RP"
+          "name": "Yoshinobu Yamamoto",
+          "mlb_team": "LAD",
+          "position": "SP"
+        },
+        {
+          "name": "Casey Mize",
+          "mlb_team": "DET",
+          "position": "SP"
         },
         {
           "name": "Chris Sale",
@@ -1766,8 +1761,8 @@
           "position": "SP"
         },
         {
-          "name": "Mitch Keller",
-          "mlb_team": "PIT",
+          "name": "Michael Wacha",
+          "mlb_team": "KC",
           "position": "SP"
         },
         {
@@ -1796,23 +1791,23 @@
           "position": "SP"
         },
         {
+          "name": "Andrew Abbott",
+          "mlb_team": "CIN",
+          "position": "SP"
+        },
+        {
           "name": "Carlos Rod\u00f3n",
           "mlb_team": "NYY",
           "position": "SP"
         },
         {
+          "name": "Mitch Keller",
+          "mlb_team": "PIT",
+          "position": "SP"
+        },
+        {
           "name": "Eury P\u00e9rez",
           "mlb_team": "MIA",
-          "position": "SP"
-        },
-        {
-          "name": "Michael Wacha",
-          "mlb_team": "KC",
-          "position": "SP"
-        },
-        {
-          "name": "Andrew Abbott",
-          "mlb_team": "CIN",
           "position": "SP"
         },
         {
