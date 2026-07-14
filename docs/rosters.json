@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13T15:38:58.315865+00:00",
+  "updated": "2026-07-14T14:43:02.285038+00:00",
   "current_week": 17,
   "matchups": [
     {
@@ -949,6 +949,21 @@
           "position": "1B,OF"
         },
         {
+          "name": "Byron Buxton",
+          "mlb_team": "MIN",
+          "position": "OF"
+        },
+        {
+          "name": "Oneil Cruz",
+          "mlb_team": "PIT",
+          "position": "OF"
+        },
+        {
+          "name": "Jeremy Pe\u00f1a",
+          "mlb_team": "HOU",
+          "position": "SS"
+        },
+        {
           "name": "Joe Ryan",
           "mlb_team": "MIN",
           "position": "SP"
@@ -1007,21 +1022,6 @@
           "name": "Max Meyer",
           "mlb_team": "MIA",
           "position": "SP"
-        },
-        {
-          "name": "Byron Buxton",
-          "mlb_team": "MIN",
-          "position": "OF"
-        },
-        {
-          "name": "Oneil Cruz",
-          "mlb_team": "PIT",
-          "position": "OF"
-        },
-        {
-          "name": "Jeremy Pe\u00f1a",
-          "mlb_team": "HOU",
-          "position": "SS"
         }
       ]
     },
@@ -1091,6 +1091,16 @@
           "position": "OF"
         },
         {
+          "name": "Ronald Acu\u00f1a Jr.",
+          "mlb_team": "ATL",
+          "position": "OF"
+        },
+        {
+          "name": "Brendan Donovan",
+          "mlb_team": "SEA",
+          "position": "2B,3B,SS,OF"
+        },
+        {
           "name": "Emerson Hancock",
           "mlb_team": "SEA",
           "position": "SP,RP"
@@ -1146,19 +1156,9 @@
           "position": "SP"
         },
         {
-          "name": "Ronald Acu\u00f1a Jr.",
-          "mlb_team": "ATL",
-          "position": "OF"
-        },
-        {
           "name": "Michael Soroka",
           "mlb_team": "AZ",
           "position": "SP,RP"
-        },
-        {
-          "name": "Brendan Donovan",
-          "mlb_team": "SEA",
-          "position": "2B,3B,SS,OF"
         },
         {
           "name": "Kyle Harrison",
@@ -1228,6 +1228,11 @@
           "position": "2B"
         },
         {
+          "name": "Jos\u00e9 Ram\u00edrez",
+          "mlb_team": "CLE",
+          "position": "3B"
+        },
+        {
           "name": "Jacob Latz",
           "mlb_team": "TEX",
           "position": "SP,RP"
@@ -1286,11 +1291,6 @@
           "name": "Gage Jump",
           "mlb_team": "ATH",
           "position": "SP"
-        },
-        {
-          "name": "Jos\u00e9 Ram\u00edrez",
-          "mlb_team": "CLE",
-          "position": "3B"
         },
         {
           "name": "Edwin D\u00edaz",
@@ -1497,6 +1497,21 @@
           "position": "C"
         },
         {
+          "name": "Aaron Judge",
+          "mlb_team": "NYY",
+          "position": "OF"
+        },
+        {
+          "name": "Carlos Correa",
+          "mlb_team": "HOU",
+          "position": "3B,SS"
+        },
+        {
+          "name": "Giancarlo Stanton",
+          "mlb_team": "NYY",
+          "position": "OF"
+        },
+        {
           "name": "Antonio Senzatela",
           "mlb_team": "COL",
           "position": "SP,RP"
@@ -1545,21 +1560,6 @@
           "name": "Chris Sale",
           "mlb_team": "ATL",
           "position": "SP"
-        },
-        {
-          "name": "Aaron Judge",
-          "mlb_team": "NYY",
-          "position": "OF"
-        },
-        {
-          "name": "Carlos Correa",
-          "mlb_team": "HOU",
-          "position": "3B,SS"
-        },
-        {
-          "name": "Giancarlo Stanton",
-          "mlb_team": "NYY",
-          "position": "OF"
         }
       ]
     },
@@ -1761,6 +1761,16 @@
           "position": "SS"
         },
         {
+          "name": "Gleyber Torres",
+          "mlb_team": "DET",
+          "position": "2B"
+        },
+        {
+          "name": "Konnor Griffin",
+          "mlb_team": "PIT",
+          "position": "SS,OF"
+        },
+        {
           "name": "Michael Wacha",
           "mlb_team": "KC",
           "position": "SP"
@@ -1819,16 +1829,6 @@
           "name": "Carlos Rod\u00f3n",
           "mlb_team": "NYY",
           "position": "SP"
-        },
-        {
-          "name": "Gleyber Torres",
-          "mlb_team": "DET",
-          "position": "2B"
-        },
-        {
-          "name": "Konnor Griffin",
-          "mlb_team": "PIT",
-          "position": "SS,OF"
         },
         {
           "name": "Tyler Glasnow",
@@ -1913,6 +1913,21 @@
           "position": "OF"
         },
         {
+          "name": "Marcus Semien",
+          "mlb_team": "NYM",
+          "position": "2B"
+        },
+        {
+          "name": "Will Smith",
+          "mlb_team": "LAD",
+          "position": "C"
+        },
+        {
+          "name": "Mike Trout",
+          "mlb_team": "LAA",
+          "position": "OF"
+        },
+        {
           "name": "Bryan Woo",
           "mlb_team": "SEA",
           "position": "SP"
@@ -1951,21 +1966,6 @@
           "name": "Tyler Holton",
           "mlb_team": "DET",
           "position": "SP,RP"
-        },
-        {
-          "name": "Marcus Semien",
-          "mlb_team": "NYM",
-          "position": "2B"
-        },
-        {
-          "name": "Will Smith",
-          "mlb_team": "LAD",
-          "position": "C"
-        },
-        {
-          "name": "Mike Trout",
-          "mlb_team": "LAA",
-          "position": "OF"
         },
         {
           "name": "Garrett Crochet",
