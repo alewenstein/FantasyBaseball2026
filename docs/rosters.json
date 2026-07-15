@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T14:43:02.285038+00:00",
+  "updated": "2026-07-15T14:42:17.799081+00:00",
   "current_week": 17,
   "matchups": [
     {
@@ -899,14 +899,14 @@
           "position": "C"
         },
         {
-          "name": "Kody Clemens",
-          "mlb_team": "MIN",
-          "position": "1B,2B,OF"
+          "name": "Kyle Stowers",
+          "mlb_team": "MIA",
+          "position": "1B,OF"
         },
         {
-          "name": "A.J. Ewing",
-          "mlb_team": "NYM",
-          "position": "2B,OF"
+          "name": "JJ Wetherholt",
+          "mlb_team": "STL",
+          "position": "2B,3B,SS"
         },
         {
           "name": "Sal Stewart",
@@ -914,9 +914,9 @@
           "position": "1B,2B,3B"
         },
         {
-          "name": "JJ Wetherholt",
-          "mlb_team": "STL",
-          "position": "2B,3B,SS"
+          "name": "Jeremy Pe\u00f1a",
+          "mlb_team": "HOU",
+          "position": "SS"
         },
         {
           "name": "Yordan Alvarez",
@@ -929,9 +929,9 @@
           "position": "1B,OF"
         },
         {
-          "name": "Brandon Nimmo",
-          "mlb_team": "TEX",
-          "position": "OF"
+          "name": "Kody Clemens",
+          "mlb_team": "MIN",
+          "position": "1B,2B,OF"
         },
         {
           "name": "Vinnie Pasquantino",
@@ -944,9 +944,14 @@
           "position": "C"
         },
         {
-          "name": "Kyle Stowers",
-          "mlb_team": "MIA",
-          "position": "1B,OF"
+          "name": "Brandon Nimmo",
+          "mlb_team": "TEX",
+          "position": "OF"
+        },
+        {
+          "name": "A.J. Ewing",
+          "mlb_team": "NYM",
+          "position": "2B,OF"
         },
         {
           "name": "Byron Buxton",
@@ -957,11 +962,6 @@
           "name": "Oneil Cruz",
           "mlb_team": "PIT",
           "position": "OF"
-        },
-        {
-          "name": "Jeremy Pe\u00f1a",
-          "mlb_team": "HOU",
-          "position": "SS"
         },
         {
           "name": "Joe Ryan",
@@ -976,11 +976,6 @@
         {
           "name": "David Bednar",
           "mlb_team": "NYY",
-          "position": "RP"
-        },
-        {
-          "name": "Eduard Bazardo",
-          "mlb_team": "SEA",
           "position": "RP"
         },
         {
@@ -1022,6 +1017,11 @@
           "name": "Max Meyer",
           "mlb_team": "MIA",
           "position": "SP"
+        },
+        {
+          "name": "Daniel Palencia",
+          "mlb_team": "CHC",
+          "position": "RP"
         }
       ]
     },
