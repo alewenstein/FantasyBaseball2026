@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15T14:42:17.799081+00:00",
+  "updated": "2026-07-16T14:52:56.535259+00:00",
   "current_week": 17,
   "matchups": [
     {
@@ -1071,24 +1071,24 @@
           "position": "OF"
         },
         {
-          "name": "Ryan Jeffers",
-          "mlb_team": "MIN",
-          "position": "C"
-        },
-        {
           "name": "Nico Hoerner",
           "mlb_team": "CHC",
           "position": "2B,SS"
         },
         {
-          "name": "Spencer Torkelson",
-          "mlb_team": "DET",
-          "position": "1B"
-        },
-        {
           "name": "Brandon Marsh",
           "mlb_team": "PHI",
           "position": "OF"
+        },
+        {
+          "name": "Ryan Jeffers",
+          "mlb_team": "MIN",
+          "position": "C"
+        },
+        {
+          "name": "Spencer Torkelson",
+          "mlb_team": "DET",
+          "position": "1B"
         },
         {
           "name": "Ronald Acu\u00f1a Jr.",
@@ -1375,13 +1375,13 @@
           "position": "OF"
         },
         {
-          "name": "Jacob deGrom",
-          "mlb_team": "TEX",
+          "name": "Jacob Misiorowski",
+          "mlb_team": "MIL",
           "position": "SP"
         },
         {
-          "name": "Jacob Misiorowski",
-          "mlb_team": "MIL",
+          "name": "Jes\u00fas Luzardo",
+          "mlb_team": "PHI",
           "position": "SP"
         },
         {
@@ -1415,8 +1415,8 @@
           "position": "SP"
         },
         {
-          "name": "Jes\u00fas Luzardo",
-          "mlb_team": "PHI",
+          "name": "Jacob deGrom",
+          "mlb_team": "TEX",
           "position": "SP"
         },
         {
@@ -1806,6 +1806,11 @@
           "position": "SP"
         },
         {
+          "name": "Sandy Alcantara",
+          "mlb_team": "MIA",
+          "position": "SP"
+        },
+        {
           "name": "Mitch Keller",
           "mlb_team": "PIT",
           "position": "SP"
@@ -1817,11 +1822,6 @@
         },
         {
           "name": "Eury P\u00e9rez",
-          "mlb_team": "MIA",
-          "position": "SP"
-        },
-        {
-          "name": "Sandy Alcantara",
           "mlb_team": "MIA",
           "position": "SP"
         },
@@ -2182,13 +2182,13 @@
           "position": "1B,OF"
         },
         {
-          "name": "Cole Ragans",
-          "mlb_team": "KC",
+          "name": "Framber Valdez",
+          "mlb_team": "DET",
           "position": "SP"
         },
         {
-          "name": "Framber Valdez",
-          "mlb_team": "DET",
+          "name": "Hunter Brown",
+          "mlb_team": "HOU",
           "position": "SP"
         },
         {
@@ -2207,11 +2207,6 @@
           "position": "SP"
         },
         {
-          "name": "Ryan Pepiot",
-          "mlb_team": "TB",
-          "position": "SP"
-        },
-        {
           "name": "Ranger Suarez",
           "mlb_team": "BOS",
           "position": "SP"
@@ -2222,8 +2217,13 @@
           "position": "SP"
         },
         {
-          "name": "Hunter Brown",
-          "mlb_team": "HOU",
+          "name": "Cole Ragans",
+          "mlb_team": "KC",
+          "position": "SP"
+        },
+        {
+          "name": "Ryan Pepiot",
+          "mlb_team": "TB",
           "position": "SP"
         }
       ]
