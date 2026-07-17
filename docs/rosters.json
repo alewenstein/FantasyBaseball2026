@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16T14:52:56.535259+00:00",
+  "updated": "2026-07-17T14:25:54.144044+00:00",
   "current_week": 17,
   "matchups": [
     {
@@ -944,14 +944,14 @@
           "position": "C"
         },
         {
-          "name": "Brandon Nimmo",
-          "mlb_team": "TEX",
-          "position": "OF"
-        },
-        {
           "name": "A.J. Ewing",
           "mlb_team": "NYM",
           "position": "2B,OF"
+        },
+        {
+          "name": "Brandon Nimmo",
+          "mlb_team": "TEX",
+          "position": "OF"
         },
         {
           "name": "Byron Buxton",
@@ -1238,8 +1238,8 @@
           "position": "SP,RP"
         },
         {
-          "name": "Zack Wheeler",
-          "mlb_team": "PHI",
+          "name": "Logan Gilbert",
+          "mlb_team": "SEA",
           "position": "SP"
         },
         {
@@ -1258,11 +1258,6 @@
           "position": "RP"
         },
         {
-          "name": "Gabe Speier",
-          "mlb_team": "SEA",
-          "position": "RP"
-        },
-        {
           "name": "Garrett Whitlock",
           "mlb_team": "BOS",
           "position": "RP"
@@ -1273,14 +1268,19 @@
           "position": "RP"
         },
         {
-          "name": "Logan Gilbert",
-          "mlb_team": "SEA",
-          "position": "SP"
-        },
-        {
           "name": "Foster Griffin",
           "mlb_team": "WSH",
           "position": "SP,RP"
+        },
+        {
+          "name": "Gabe Speier",
+          "mlb_team": "SEA",
+          "position": "RP"
+        },
+        {
+          "name": "Zack Wheeler",
+          "mlb_team": "PHI",
+          "position": "SP"
         },
         {
           "name": "Payton Tolle",
@@ -1375,13 +1375,13 @@
           "position": "OF"
         },
         {
-          "name": "Jacob Misiorowski",
-          "mlb_team": "MIL",
+          "name": "Jacob deGrom",
+          "mlb_team": "TEX",
           "position": "SP"
         },
         {
-          "name": "Jes\u00fas Luzardo",
-          "mlb_team": "PHI",
+          "name": "Jacob Misiorowski",
+          "mlb_team": "MIL",
           "position": "SP"
         },
         {
@@ -1390,9 +1390,9 @@
           "position": "RP"
         },
         {
-          "name": "Devin Williams",
-          "mlb_team": "NYM",
-          "position": "RP"
+          "name": "Griffin Jax",
+          "mlb_team": "TB",
+          "position": "SP,RP"
         },
         {
           "name": "Taj Bradley",
@@ -1415,14 +1415,14 @@
           "position": "SP"
         },
         {
-          "name": "Jacob deGrom",
-          "mlb_team": "TEX",
+          "name": "Jes\u00fas Luzardo",
+          "mlb_team": "PHI",
           "position": "SP"
         },
         {
-          "name": "Griffin Jax",
-          "mlb_team": "TB",
-          "position": "SP,RP"
+          "name": "Devin Williams",
+          "mlb_team": "NYM",
+          "position": "RP"
         }
       ]
     },
@@ -1736,11 +1736,6 @@
           "position": "OF"
         },
         {
-          "name": "Juan Soto",
-          "mlb_team": "NYM",
-          "position": "OF"
-        },
-        {
           "name": "Jackson Merrill",
           "mlb_team": "SD",
           "position": "OF"
@@ -1759,6 +1754,11 @@
           "name": "Willy Adames",
           "mlb_team": "SF",
           "position": "SS"
+        },
+        {
+          "name": "Juan Soto",
+          "mlb_team": "NYM",
+          "position": "OF"
         },
         {
           "name": "Gleyber Torres",
@@ -1801,23 +1801,23 @@
           "position": "SP"
         },
         {
-          "name": "Bubba Chandler",
-          "mlb_team": "PIT",
-          "position": "SP"
-        },
-        {
           "name": "Sandy Alcantara",
           "mlb_team": "MIA",
           "position": "SP"
         },
         {
-          "name": "Mitch Keller",
+          "name": "Roki Sasaki",
+          "mlb_team": "LAD",
+          "position": "SP"
+        },
+        {
+          "name": "Bubba Chandler",
           "mlb_team": "PIT",
           "position": "SP"
         },
         {
-          "name": "Roki Sasaki",
-          "mlb_team": "LAD",
+          "name": "Mitch Keller",
+          "mlb_team": "PIT",
           "position": "SP"
         },
         {
