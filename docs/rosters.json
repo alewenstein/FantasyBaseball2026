@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18T14:17:04.710118+00:00",
+  "updated": "2026-07-19T14:21:05.332473+00:00",
   "current_week": 17,
   "matchups": [
     {
@@ -964,13 +964,13 @@
           "position": "OF"
         },
         {
-          "name": "Kyle Bradish",
-          "mlb_team": "BAL",
+          "name": "Max Meyer",
+          "mlb_team": "MIA",
           "position": "SP"
         },
         {
-          "name": "Max Meyer",
-          "mlb_team": "MIA",
+          "name": "Nolan McLean",
+          "mlb_team": "NYM",
           "position": "SP"
         },
         {
@@ -982,6 +982,11 @@
           "name": "Yoendrys G\u00f3mez",
           "mlb_team": "MIN",
           "position": "SP,RP"
+        },
+        {
+          "name": "Kyle Bradish",
+          "mlb_team": "BAL",
+          "position": "SP"
         },
         {
           "name": "Justin Wrobleski",
@@ -997,11 +1002,6 @@
           "name": "Lucas Erceg",
           "mlb_team": "KC",
           "position": "RP"
-        },
-        {
-          "name": "Nolan McLean",
-          "mlb_team": "NYM",
-          "position": "SP"
         },
         {
           "name": "Joe Ryan",
@@ -1066,6 +1066,11 @@
           "position": "OF"
         },
         {
+          "name": "Carson Benge",
+          "mlb_team": "NYM",
+          "position": "OF"
+        },
+        {
           "name": "Randy Arozarena",
           "mlb_team": "SEA",
           "position": "OF"
@@ -1083,11 +1088,6 @@
         {
           "name": "Brandon Marsh",
           "mlb_team": "PHI",
-          "position": "OF"
-        },
-        {
-          "name": "Carson Benge",
-          "mlb_team": "NYM",
           "position": "OF"
         },
         {
@@ -1218,14 +1218,14 @@
           "position": "1B,3B"
         },
         {
-          "name": "Travis Bazzana",
-          "mlb_team": "CLE",
-          "position": "2B"
-        },
-        {
           "name": "Cal Raleigh",
           "mlb_team": "SEA",
           "position": "C"
+        },
+        {
+          "name": "Travis Bazzana",
+          "mlb_team": "CLE",
+          "position": "2B"
         },
         {
           "name": "Jos\u00e9 Ram\u00edrez",
@@ -1238,8 +1238,8 @@
           "position": "SP,RP"
         },
         {
-          "name": "Gage Jump",
-          "mlb_team": "ATH",
+          "name": "Logan Gilbert",
+          "mlb_team": "SEA",
           "position": "SP"
         },
         {
@@ -1268,19 +1268,19 @@
           "position": "RP"
         },
         {
+          "name": "Foster Griffin",
+          "mlb_team": "WSH",
+          "position": "SP,RP"
+        },
+        {
           "name": "Logan Henderson",
           "mlb_team": "MIL",
           "position": "SP"
         },
         {
-          "name": "Logan Gilbert",
-          "mlb_team": "SEA",
+          "name": "Gage Jump",
+          "mlb_team": "ATH",
           "position": "SP"
-        },
-        {
-          "name": "Foster Griffin",
-          "mlb_team": "WSH",
-          "position": "SP,RP"
         },
         {
           "name": "Zack Wheeler",
@@ -1370,13 +1370,13 @@
           "position": "OF"
         },
         {
-          "name": "Jacob deGrom",
-          "mlb_team": "TEX",
+          "name": "Jacob Misiorowski",
+          "mlb_team": "MIL",
           "position": "SP"
         },
         {
-          "name": "Jacob Misiorowski",
-          "mlb_team": "MIL",
+          "name": "Jes\u00fas Luzardo",
+          "mlb_team": "PHI",
           "position": "SP"
         },
         {
@@ -1410,14 +1410,14 @@
           "position": "SP"
         },
         {
+          "name": "Jacob deGrom",
+          "mlb_team": "TEX",
+          "position": "SP"
+        },
+        {
           "name": "Griffin Jax",
           "mlb_team": "TB",
           "position": "SP,RP"
-        },
-        {
-          "name": "Jes\u00fas Luzardo",
-          "mlb_team": "PHI",
-          "position": "SP"
         }
       ]
     },
@@ -1574,9 +1574,9 @@
           "position": "C,1B"
         },
         {
-          "name": "Jackson Holliday",
-          "mlb_team": "BAL",
-          "position": "2B,SS"
+          "name": "Curtis Mead",
+          "mlb_team": "WSH",
+          "position": "1B,2B,3B"
         },
         {
           "name": "Casey Schmitt",
@@ -1609,6 +1609,16 @@
           "position": "OF"
         },
         {
+          "name": "Willson Contreras",
+          "mlb_team": "BOS",
+          "position": "1B"
+        },
+        {
+          "name": "Jackson Holliday",
+          "mlb_team": "BAL",
+          "position": "2B,SS"
+        },
+        {
           "name": "Paul Goldschmidt",
           "mlb_team": "NYY",
           "position": "1B"
@@ -1619,24 +1629,14 @@
           "position": "2B,SS"
         },
         {
-          "name": "Willson Contreras",
-          "mlb_team": "BOS",
-          "position": "1B"
-        },
-        {
-          "name": "Curtis Mead",
-          "mlb_team": "WSH",
-          "position": "1B,2B,3B"
-        },
-        {
           "name": "Michael King",
           "mlb_team": "SD",
           "position": "SP"
         },
         {
-          "name": "Gerrit Cole",
-          "mlb_team": "NYY",
-          "position": "SP"
+          "name": "Ian Seymour",
+          "mlb_team": "TB",
+          "position": "SP,RP"
         },
         {
           "name": "Cade Smith",
@@ -1669,9 +1669,9 @@
           "position": "RP"
         },
         {
-          "name": "Ian Seymour",
-          "mlb_team": "TB",
-          "position": "SP,RP"
+          "name": "Gerrit Cole",
+          "mlb_team": "NYY",
+          "position": "SP"
         },
         {
           "name": "Drew Rasmussen",
@@ -1746,14 +1746,14 @@
           "position": "SS"
         },
         {
-          "name": "Willy Adames",
-          "mlb_team": "SF",
-          "position": "SS"
-        },
-        {
           "name": "Juan Soto",
           "mlb_team": "NYM",
           "position": "OF"
+        },
+        {
+          "name": "Willy Adames",
+          "mlb_team": "SF",
+          "position": "SS"
         },
         {
           "name": "Gleyber Torres",
@@ -1796,11 +1796,6 @@
           "position": "SP"
         },
         {
-          "name": "Bubba Chandler",
-          "mlb_team": "PIT",
-          "position": "SP"
-        },
-        {
           "name": "Eury P\u00e9rez",
           "mlb_team": "MIA",
           "position": "SP"
@@ -1808,6 +1803,11 @@
         {
           "name": "Sandy Alcantara",
           "mlb_team": "MIA",
+          "position": "SP"
+        },
+        {
+          "name": "Bubba Chandler",
+          "mlb_team": "PIT",
           "position": "SP"
         },
         {
