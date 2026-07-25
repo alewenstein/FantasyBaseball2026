@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T14:46:03.607987+00:00",
+  "updated": "2026-07-25T14:27:12.319722+00:00",
   "current_week": 17,
   "matchups": [
     {
@@ -862,14 +862,14 @@
           "position": "RP"
         },
         {
-          "name": "Chase Burns",
-          "mlb_team": "CIN",
-          "position": "SP,RP"
-        },
-        {
           "name": "Robbie Ray",
           "mlb_team": "SF",
           "position": "SP"
+        },
+        {
+          "name": "Chase Burns",
+          "mlb_team": "CIN",
+          "position": "SP,RP"
         },
         {
           "name": "Jakob Junis",
@@ -899,9 +899,9 @@
           "position": "C"
         },
         {
-          "name": "Vinnie Pasquantino",
-          "mlb_team": "KC",
-          "position": "1B"
+          "name": "Kyle Stowers",
+          "mlb_team": "MIA",
+          "position": "1B,OF"
         },
         {
           "name": "JJ Wetherholt",
@@ -924,14 +924,14 @@
           "position": "OF"
         },
         {
-          "name": "Jac Caglianone",
-          "mlb_team": "KC",
-          "position": "1B,OF"
-        },
-        {
           "name": "Kody Clemens",
           "mlb_team": "MIN",
           "position": "1B,2B,OF"
+        },
+        {
+          "name": "A.J. Ewing",
+          "mlb_team": "NYM",
+          "position": "2B,OF"
         },
         {
           "name": "Dillon Dingler",
@@ -944,14 +944,14 @@
           "position": "OF"
         },
         {
-          "name": "Kyle Stowers",
-          "mlb_team": "MIA",
-          "position": "1B,OF"
+          "name": "Vinnie Pasquantino",
+          "mlb_team": "KC",
+          "position": "1B"
         },
         {
-          "name": "A.J. Ewing",
-          "mlb_team": "NYM",
-          "position": "2B,OF"
+          "name": "Jac Caglianone",
+          "mlb_team": "KC",
+          "position": "1B,OF"
         },
         {
           "name": "Brandon Nimmo",
@@ -1046,9 +1046,9 @@
           "position": "2B,SS"
         },
         {
-          "name": "Mauricio Dub\u00f3n",
-          "mlb_team": "ATL",
-          "position": "2B,3B,SS,OF"
+          "name": "Eugenio Su\u00e1rez",
+          "mlb_team": "CIN",
+          "position": "3B"
         },
         {
           "name": "Brooks Lee",
@@ -1081,9 +1081,9 @@
           "position": "C"
         },
         {
-          "name": "Eugenio Su\u00e1rez",
-          "mlb_team": "CIN",
-          "position": "3B"
+          "name": "Mauricio Dub\u00f3n",
+          "mlb_team": "ATL",
+          "position": "2B,3B,SS,OF"
         },
         {
           "name": "Brandon Marsh",
@@ -1422,8 +1422,8 @@
       "manager": "Sean",
       "players": [
         {
-          "name": "Adley Rutschman",
-          "mlb_team": "BAL",
+          "name": "Dalton Rushing",
+          "mlb_team": "LAD",
           "position": "C"
         },
         {
@@ -1472,6 +1472,11 @@
           "position": "Util"
         },
         {
+          "name": "Adley Rutschman",
+          "mlb_team": "BAL",
+          "position": "C"
+        },
+        {
           "name": "Matt McLain",
           "mlb_team": "CIN",
           "position": "2B,SS"
@@ -1480,11 +1485,6 @@
           "name": "Daulton Varsho",
           "mlb_team": "TOR",
           "position": "OF"
-        },
-        {
-          "name": "Dalton Rushing",
-          "mlb_team": "LAD",
-          "position": "C"
         },
         {
           "name": "Aaron Judge",
@@ -1604,6 +1604,11 @@
           "position": "1B"
         },
         {
+          "name": "Wilyer Abreu",
+          "mlb_team": "BOS",
+          "position": "OF"
+        },
+        {
           "name": "Paul Goldschmidt",
           "mlb_team": "NYY",
           "position": "1B"
@@ -1612,11 +1617,6 @@
           "name": "Jackson Holliday",
           "mlb_team": "BAL",
           "position": "2B,SS"
-        },
-        {
-          "name": "Wilyer Abreu",
-          "mlb_team": "BOS",
-          "position": "OF"
         },
         {
           "name": "Nasim Nu\u00f1ez",
@@ -1796,12 +1796,12 @@
           "position": "SP"
         },
         {
-          "name": "Roki Sasaki",
-          "mlb_team": "LAD",
+          "name": "Eury P\u00e9rez",
+          "mlb_team": "MIA",
           "position": "SP"
         },
         {
-          "name": "Eury P\u00e9rez",
+          "name": "Sandy Alcantara",
           "mlb_team": "MIA",
           "position": "SP"
         },
@@ -1811,13 +1811,13 @@
           "position": "SP"
         },
         {
-          "name": "Sandy Alcantara",
-          "mlb_team": "MIA",
+          "name": "Mitch Keller",
+          "mlb_team": "PIT",
           "position": "SP"
         },
         {
-          "name": "Mitch Keller",
-          "mlb_team": "PIT",
+          "name": "Roki Sasaki",
+          "mlb_team": "LAD",
           "position": "SP"
         },
         {
