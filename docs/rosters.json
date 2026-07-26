@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T14:27:12.319722+00:00",
+  "updated": "2026-07-26T14:24:37.506262+00:00",
   "current_week": 17,
   "matchups": [
     {
@@ -929,9 +929,9 @@
           "position": "1B,2B,OF"
         },
         {
-          "name": "A.J. Ewing",
-          "mlb_team": "NYM",
-          "position": "2B,OF"
+          "name": "Brandon Nimmo",
+          "mlb_team": "TEX",
+          "position": "OF"
         },
         {
           "name": "Dillon Dingler",
@@ -944,6 +944,11 @@
           "position": "OF"
         },
         {
+          "name": "A.J. Ewing",
+          "mlb_team": "NYM",
+          "position": "2B,OF"
+        },
+        {
           "name": "Vinnie Pasquantino",
           "mlb_team": "KC",
           "position": "1B"
@@ -952,11 +957,6 @@
           "name": "Jac Caglianone",
           "mlb_team": "KC",
           "position": "1B,OF"
-        },
-        {
-          "name": "Brandon Nimmo",
-          "mlb_team": "TEX",
-          "position": "OF"
         },
         {
           "name": "Oneil Cruz",
@@ -1076,14 +1076,14 @@
           "position": "1B"
         },
         {
-          "name": "Ryan Jeffers",
-          "mlb_team": "MIN",
-          "position": "C"
-        },
-        {
           "name": "Mauricio Dub\u00f3n",
           "mlb_team": "ATL",
           "position": "2B,3B,SS,OF"
+        },
+        {
+          "name": "Ryan Jeffers",
+          "mlb_team": "MIN",
+          "position": "C"
         },
         {
           "name": "Brandon Marsh",
@@ -1101,13 +1101,13 @@
           "position": "2B,3B,SS,OF"
         },
         {
-          "name": "Tarik Skubal",
-          "mlb_team": "DET",
-          "position": "SP"
+          "name": "Emerson Hancock",
+          "mlb_team": "SEA",
+          "position": "SP,RP"
         },
         {
-          "name": "Trey Yesavage",
-          "mlb_team": "TOR",
+          "name": "Parker Messick",
+          "mlb_team": "CLE",
           "position": "SP"
         },
         {
@@ -1141,18 +1141,18 @@
           "position": "SP,RP"
         },
         {
-          "name": "Parker Messick",
-          "mlb_team": "CLE",
+          "name": "Hunter Greene",
+          "mlb_team": "CIN",
           "position": "SP"
         },
         {
-          "name": "Emerson Hancock",
-          "mlb_team": "SEA",
-          "position": "SP,RP"
+          "name": "Trey Yesavage",
+          "mlb_team": "TOR",
+          "position": "SP"
         },
         {
-          "name": "Hunter Greene",
-          "mlb_team": "CIN",
+          "name": "Tarik Skubal",
+          "mlb_team": "DET",
           "position": "SP"
         },
         {
@@ -1370,8 +1370,8 @@
           "position": "SP"
         },
         {
-          "name": "Jes\u00fas Luzardo",
-          "mlb_team": "PHI",
+          "name": "Jacob deGrom",
+          "mlb_team": "TEX",
           "position": "SP"
         },
         {
@@ -1405,14 +1405,14 @@
           "position": "SP"
         },
         {
+          "name": "Jes\u00fas Luzardo",
+          "mlb_team": "PHI",
+          "position": "SP"
+        },
+        {
           "name": "Griffin Jax",
           "mlb_team": "TB",
           "position": "SP,RP"
-        },
-        {
-          "name": "Jacob deGrom",
-          "mlb_team": "TEX",
-          "position": "SP"
         }
       ]
     },
@@ -1570,7 +1570,7 @@
         },
         {
           "name": "Curtis Mead",
-          "mlb_team": "WSH",
+          "mlb_team": "BOS",
           "position": "1B,2B,3B"
         },
         {
